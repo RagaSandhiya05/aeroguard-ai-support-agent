@@ -90,7 +90,7 @@ streamlit run app/streamlit_app.py
 </div>
 
 <div align="center">
-  <b><i>Figure 2. End-to-End AeroGuard pipeline result showing classification, response generation, and escalation.</i></b>
+  <b><i>Figure 2. End-to-End AeroGuard pipeline results showing intent classification, retrieval, response generation, confidence assessment, and human escalation.</i></b>
 </div>
 
 
