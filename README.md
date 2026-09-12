@@ -48,6 +48,55 @@ streamlit run app/streamlit_app.py
 
 ---
 
+## 📸 Screenshots
+
+### Live Agent Sandbox
+
+<div align="center">
+  <img width="1785" height="582" alt="Scrren_1" src="https://github.com/user-attachments/assets/7b86a0b5-ad5b-471a-b32f-01cb35fdd690" />
+</div>
+
+<div align="center">
+  <b><i>Figure 1. Live Agent Sandbox for interactive customer support testing.</i></b>
+</div>
+
+---
+
+### End-to-End Pipeline Results
+
+<div align="center">
+  <img width="702" height="247" alt="image" src="https://github.com/user-attachments/assets/af2fac59-5d3c-4012-967c-2e8630f6ca58" />
+
+  ---
+
+  <img width="702" height="642" alt="image" src="https://github.com/user-attachments/assets/184a93d2-3e02-470b-bcf3-360d4ffdb236" />
+
+  ---
+  
+  <img width="702" height="357" alt="image" src="https://github.com/user-attachments/assets/661152c6-127b-4fa2-8957-dc9bd5c80396" />
+
+---
+
+  <img width="702" height="266" alt="image" src="https://github.com/user-attachments/assets/38c474e6-eb2d-4073-aec7-c012c396fe2a" />
+
+---
+
+  <img width="702" height="237" alt="image" src="https://github.com/user-attachments/assets/cb3fb329-77fe-4496-b0bb-3c2345a4c5f7" />
+
+---
+  
+  <img width="702" height="687" alt="image" src="https://github.com/user-attachments/assets/c44d9840-b291-4e9c-88fd-296e18f5f507" />
+
+</div>
+
+<div align="center">
+  <b><i>Figure 2. End-to-End AeroGuard pipeline result showing classification, response generation, and escalation.</i></b>
+</div>
+
+
+---
+
+
 ## 📊 Headline Benchmark Results (200 Golden Samples)
 
 | Evaluation Dimension | Metric | Baseline 0 (Trivial) | Baseline 1 (Simple) | AeroGuard (Ours) |
