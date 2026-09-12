@@ -1,0 +1,2799 @@
+[
+  {
+    "id": "GOLD_001",
+    "customer_text": "My flight DL102 from ATL to LGA was cancelled with zero notice! What are my options to get home tonight?",
+    "ground_truth_intent": "flight_disruption",
+    "true_escalation": true,
+    "escalation_reason": "Flight cancellation requires immediate rebooking and live inventory lookup by an agent.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "cancellation",
+      "rebooking"
+    ],
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "annotation_notes": "Hand-curated benchmark case for flight_disruption with easy difficulty."
+  },
+  {
+    "id": "GOLD_002",
+    "customer_text": "Stuck on the tarmac at JFK for 3 hours now. No water, no updates from captain. Flight 441. What is going on?",
+    "ground_truth_intent": "flight_disruption",
+    "true_escalation": true,
+    "escalation_reason": "Tarmac delay exceeding DOT 3-hour rule with passenger distress; mandatory human escalation.",
+    "difficulty_tier": "hard",
+    "tags": [
+      "tarmac_delay",
+      "dot_regulation",
+      "distress"
+    ],
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "annotation_notes": "Hand-curated benchmark case for flight_disruption with hard difficulty."
+  },
+  {
+    "id": "GOLD_003",
+    "customer_text": "Is flight DL 892 to Seattle on time today?",
+    "ground_truth_intent": "flight_disruption",
+    "true_escalation": false,
+    "escalation_reason": "Routine flight status query; auto-handled via real-time flight tracking lookup.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "status_check",
+      "faq"
+    ],
+    "reference_reply": "Hello! Standard Delta guidelines apply. You can view full details or manage this anytime in the Fly Delta app or delta.com. *AI",
+    "annotation_notes": "Hand-curated benchmark case for flight_disruption with easy difficulty."
+  },
+  {
+    "id": "GOLD_004",
+    "customer_text": "Gate changed 4 times in 30 minutes at MSP! Now nobody knows where DL 1520 is boarding.",
+    "ground_truth_intent": "flight_disruption",
+    "true_escalation": true,
+    "escalation_reason": "Imminent boarding confusion at airport requiring operational gate dispatch assistance.",
+    "difficulty_tier": "medium",
+    "tags": [
+      "gate_change",
+      "airport_urgency"
+    ],
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "annotation_notes": "Hand-curated benchmark case for flight_disruption with medium difficulty."
+  },
+  {
+    "id": "GOLD_005",
+    "customer_text": "Missed my connection in Detroit because incoming flight DL302 was delayed 45 mins. Next flight isn't until tomorrow! Help!",
+    "ground_truth_intent": "flight_disruption",
+    "true_escalation": true,
+    "escalation_reason": "Missed connection resulting in overnight stranding; requires human agent for rebooking and hotel voucher.",
+    "difficulty_tier": "hard",
+    "tags": [
+      "missed_connection",
+      "stranded"
+    ],
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "annotation_notes": "Hand-curated benchmark case for flight_disruption with hard difficulty."
+  },
+  {
+    "id": "GOLD_006",
+    "customer_text": "DL 492 diverted to Cincinnati due to weather. Are buses being arranged to Columbus?",
+    "ground_truth_intent": "flight_disruption",
+    "true_escalation": true,
+    "escalation_reason": "Weather diversion emergency; passenger stranded at diversion airport.",
+    "difficulty_tier": "medium",
+    "tags": [
+      "diversion",
+      "weather"
+    ],
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "annotation_notes": "Hand-curated benchmark case for flight_disruption with medium difficulty."
+  },
+  {
+    "id": "GOLD_007",
+    "customer_text": "Thanks so much Delta for another magical 6 hours sitting on the floor at Atlanta airport! You guys never fail to impress! 👏",
+    "ground_truth_intent": "flight_disruption",
+    "true_escalation": true,
+    "escalation_reason": "Heavy sarcasm concealing severe flight delay distress; human escalation required.",
+    "difficulty_tier": "hard",
+    "tags": [
+      "sarcasm",
+      "distress"
+    ],
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "annotation_notes": "Hand-curated benchmark case for flight_disruption with hard difficulty."
+  },
+  {
+    "id": "GOLD_008",
+    "customer_text": "Flight DL 284 delayed by 2 hours. Will I still make my 50 min connection in Salt Lake City?",
+    "ground_truth_intent": "flight_disruption",
+    "true_escalation": true,
+    "escalation_reason": "Tight connection risk (<1 hour) during active delay; human review needed to protect onward connection.",
+    "difficulty_tier": "medium",
+    "tags": [
+      "tight_connection"
+    ],
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "annotation_notes": "Hand-curated benchmark case for flight_disruption with medium difficulty."
+  },
+  {
+    "id": "GOLD_009",
+    "customer_text": "Why was DL 190 cancelled out of Boston today? Was it mechanical or weather?",
+    "ground_truth_intent": "flight_disruption",
+    "true_escalation": false,
+    "escalation_reason": "Disruption cause explanation inquiry; auto-handled with standard operational advisory.",
+    "difficulty_tier": "medium",
+    "tags": [
+      "delay_reason"
+    ],
+    "reference_reply": "Hello! Standard Delta guidelines apply. You can view full details or manage this anytime in the Fly Delta app or delta.com. *AI",
+    "annotation_notes": "Hand-curated benchmark case for flight_disruption with medium difficulty."
+  },
+  {
+    "id": "GOLD_010",
+    "customer_text": "Sitting at gate B12, agent just announced a 4-hour delay on DL 771 due to crew rest requirements. Can we get food vouchers?",
+    "ground_truth_intent": "flight_disruption",
+    "true_escalation": true,
+    "escalation_reason": "Delay exceeding 3 hours due to airline controllable factor (crew); agent voucher authorization needed.",
+    "difficulty_tier": "medium",
+    "tags": [
+      "crew_delay",
+      "vouchers"
+    ],
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "annotation_notes": "Hand-curated benchmark case for flight_disruption with medium difficulty."
+  },
+  {
+    "id": "GOLD_011",
+    "customer_text": "Landed in Miami on DL 1891 but my bag never arrived on carousel 4! File reference is MIAL10928.",
+    "ground_truth_intent": "baggage_issue",
+    "true_escalation": true,
+    "escalation_reason": "Lost baggage claim requiring PIR tracking and baggage services dispatch.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "lost_bag",
+      "pir_reference"
+    ],
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "annotation_notes": "Hand-curated benchmark case for baggage_issue with easy difficulty."
+  },
+  {
+    "id": "GOLD_012",
+    "customer_text": "Delta baggage desk at LAX gave me my suitcase crushed with a broken wheel and torn zipper! How do I file a claim?",
+    "ground_truth_intent": "baggage_issue",
+    "true_escalation": true,
+    "escalation_reason": "Physical baggage damage claim requiring photographic damage assessment and claim processing.",
+    "difficulty_tier": "medium",
+    "tags": [
+      "damaged_bag",
+      "claim"
+    ],
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "annotation_notes": "Hand-curated benchmark case for baggage_issue with medium difficulty."
+  },
+  {
+    "id": "GOLD_013",
+    "customer_text": "My bag was lost on flight DL544 and my life-saving heart medication is in that suitcase! I need it immediately!",
+    "ground_truth_intent": "baggage_issue",
+    "true_escalation": true,
+    "escalation_reason": "CRITICAL MEDICAL EMERGENCY: Vital medication in delayed baggage; urgent high-priority human escalation.",
+    "difficulty_tier": "hard",
+    "tags": [
+      "medical_emergency",
+      "lost_bag",
+      "critical"
+    ],
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "annotation_notes": "Hand-curated benchmark case for baggage_issue with hard difficulty."
+  },
+  {
+    "id": "GOLD_014",
+    "customer_text": "Is there a tracking tool where I can see where my checked bag was loaded for DL 309?",
+    "ground_truth_intent": "baggage_issue",
+    "true_escalation": false,
+    "escalation_reason": "General inquiry about Fly Delta app baggage tracking feature; auto-resolvable with guide.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "bag_tracking_faq",
+      "self_service"
+    ],
+    "reference_reply": "Hello! Standard Delta guidelines apply. You can view full details or manage this anytime in the Fly Delta app or delta.com. *AI",
+    "annotation_notes": "Hand-curated benchmark case for baggage_issue with easy difficulty."
+  },
+  {
+    "id": "GOLD_015",
+    "customer_text": "Left my iPad in the seat pocket of 14B on flight DL 1288 that just landed in Orlando. Who do I contact?",
+    "ground_truth_intent": "baggage_issue",
+    "true_escalation": true,
+    "escalation_reason": "High-value lost property onboard aircraft; immediate gate crew notification needed before cleaning turnaround.",
+    "difficulty_tier": "hard",
+    "tags": [
+      "lost_item_onboard",
+      "urgent"
+    ],
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "annotation_notes": "Hand-curated benchmark case for baggage_issue with hard difficulty."
+  },
+  {
+    "id": "GOLD_016",
+    "customer_text": "Still waiting for my bag 48 hours after DL 482 landed. No updates on the tracker. This is unacceptable.",
+    "ground_truth_intent": "baggage_issue",
+    "true_escalation": true,
+    "escalation_reason": "Chronic baggage delay (>48h) with tracking stalled; needs human escalation to baggage central.",
+    "difficulty_tier": "medium",
+    "tags": [
+      "chronic_delay",
+      "high_frustration"
+    ],
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "annotation_notes": "Hand-curated benchmark case for baggage_issue with medium difficulty."
+  },
+  {
+    "id": "GOLD_017",
+    "customer_text": "Bag tag DL982301 says delivered to baggage claim but carousel 2 is completely empty.",
+    "ground_truth_intent": "baggage_issue",
+    "true_escalation": true,
+    "escalation_reason": "Discrepancy between bag scan status and physical delivery; requires airport ground staff inquiry.",
+    "difficulty_tier": "medium",
+    "tags": [
+      "tag_discrepancy"
+    ],
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "annotation_notes": "Hand-curated benchmark case for baggage_issue with medium difficulty."
+  },
+  {
+    "id": "GOLD_018",
+    "customer_text": "My daughter's wheelchair was damaged during flight DL 1102 from DTW. She cannot leave the gate without it!",
+    "ground_truth_intent": "baggage_issue",
+    "true_escalation": true,
+    "escalation_reason": "CRITICAL ACCESSIBILITY VIOLATION: Damaged assistive device/wheelchair; immediate human management required.",
+    "difficulty_tier": "hard",
+    "tags": [
+      "accessibility",
+      "wheelchair_damage",
+      "critical"
+    ],
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "annotation_notes": "Hand-curated benchmark case for baggage_issue with hard difficulty."
+  },
+  {
+    "id": "GOLD_019",
+    "customer_text": "Does Delta cover essential clothes and toiletries while my luggage is delayed?",
+    "ground_truth_intent": "baggage_issue",
+    "true_escalation": false,
+    "escalation_reason": "Reimbursement policy for interim expenses during delayed luggage; auto-handled with official policy guidelines.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "baggage_policy",
+      "interim_expenses"
+    ],
+    "reference_reply": "Hello! Standard Delta guidelines apply. You can view full details or manage this anytime in the Fly Delta app or delta.com. *AI",
+    "annotation_notes": "Hand-curated benchmark case for baggage_issue with easy difficulty."
+  },
+  {
+    "id": "GOLD_020",
+    "customer_text": "My suitcase arrived completely soaked in wine from someone else's broken bottle inside the cargo hold.",
+    "ground_truth_intent": "baggage_issue",
+    "true_escalation": true,
+    "escalation_reason": "Damaged contents claim requiring claims department submission and cleaning reimbursement.",
+    "difficulty_tier": "medium",
+    "tags": [
+      "contents_damage"
+    ],
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "annotation_notes": "Hand-curated benchmark case for baggage_issue with medium difficulty."
+  },
+  {
+    "id": "GOLD_021",
+    "customer_text": "Need to change my seat on flight DL 492 tomorrow from 32E to an aisle seat. App says seat map unavailable.",
+    "ground_truth_intent": "booking_reservation",
+    "true_escalation": true,
+    "escalation_reason": "Seat change failure in app requiring agent seat assignment or airport standby placement.",
+    "difficulty_tier": "medium",
+    "tags": [
+      "seat_change",
+      "app_error"
+    ],
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "annotation_notes": "Hand-curated benchmark case for booking_reservation with medium difficulty."
+  },
+  {
+    "id": "GOLD_022",
+    "customer_text": "I want to cancel my flight DL 801 next Friday and get an eCredit. How do I do that?",
+    "ground_truth_intent": "booking_reservation",
+    "true_escalation": false,
+    "escalation_reason": "Standard cancellation for eCredit; auto-handled with step-by-step self-service instructions.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "cancel_ticket",
+      "ecredit"
+    ],
+    "reference_reply": "Hello! Standard Delta guidelines apply. You can view full details or manage this anytime in the Fly Delta app or delta.com. *AI",
+    "annotation_notes": "Hand-curated benchmark case for booking_reservation with easy difficulty."
+  },
+  {
+    "id": "GOLD_023",
+    "customer_text": "My confirmation code is H7K9P2. Can you please check if my wife and I are seated together?",
+    "ground_truth_intent": "booking_reservation",
+    "true_escalation": true,
+    "escalation_reason": "PII EXPOSURE WARNING: Customer posted 6-character PNR publicly; must sanitize and route to private DM.",
+    "difficulty_tier": "hard",
+    "tags": [
+      "pii_exposed",
+      "pnr_leak",
+      "seat_assignment"
+    ],
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "annotation_notes": "Hand-curated benchmark case for booking_reservation with hard difficulty."
+  },
+  {
+    "id": "GOLD_024",
+    "customer_text": "Was double charged $450 on my credit card for ticket reservation 0062391029381. Refund the extra charge now!",
+    "ground_truth_intent": "booking_reservation",
+    "true_escalation": true,
+    "escalation_reason": "Billing dispute and duplicate charge; human accounting review required.",
+    "difficulty_tier": "medium",
+    "tags": [
+      "billing_dispute",
+      "duplicate_charge"
+    ],
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "annotation_notes": "Hand-curated benchmark case for booking_reservation with medium difficulty."
+  },
+  {
+    "id": "GOLD_025",
+    "customer_text": "Can I use my Delta SkyMiles to upgrade from Main Cabin to Comfort+ on an existing reservation?",
+    "ground_truth_intent": "booking_reservation",
+    "true_escalation": false,
+    "escalation_reason": "Milage upgrade policy inquiry; auto-handled with SkyMiles upgrade rules and app directions.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "skymiles_upgrade",
+      "faq"
+    ],
+    "reference_reply": "Hello! Standard Delta guidelines apply. You can view full details or manage this anytime in the Fly Delta app or delta.com. *AI",
+    "annotation_notes": "Hand-curated benchmark case for booking_reservation with easy difficulty."
+  },
+  {
+    "id": "GOLD_026",
+    "customer_text": "Need to change flight date due to family bereavement. Do you waive change fees for death in immediate family?",
+    "ground_truth_intent": "booking_reservation",
+    "true_escalation": true,
+    "escalation_reason": "Bereavement fare/exception request requiring compassionate human policy review and documentation.",
+    "difficulty_tier": "hard",
+    "tags": [
+      "bereavement",
+      "fee_waiver"
+    ],
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "annotation_notes": "Hand-curated benchmark case for booking_reservation with hard difficulty."
+  },
+  {
+    "id": "GOLD_027",
+    "customer_text": "Booked a Basic Economy ticket by mistake 20 minutes ago. Can I cancel risk-free within 24 hours?",
+    "ground_truth_intent": "booking_reservation",
+    "true_escalation": false,
+    "escalation_reason": "DOT 24-hour risk-free cancellation policy inquiry; auto-handled with standard 24h guarantee guidance.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "24hr_cancel",
+      "policy_faq"
+    ],
+    "reference_reply": "Hello! Standard Delta guidelines apply. You can view full details or manage this anytime in the Fly Delta app or delta.com. *AI",
+    "annotation_notes": "Hand-curated benchmark case for booking_reservation with easy difficulty."
+  },
+  {
+    "id": "GOLD_028",
+    "customer_text": "Tried to apply companion certificate from Delta Reserve Amex card but getting error code ERR_CERT_INVALID.",
+    "ground_truth_intent": "booking_reservation",
+    "true_escalation": true,
+    "escalation_reason": "Amex cobranded companion voucher redemption bug; requires agent reservation desk override.",
+    "difficulty_tier": "medium",
+    "tags": [
+      "companion_pass",
+      "voucher_bug"
+    ],
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "annotation_notes": "Hand-curated benchmark case for booking_reservation with medium difficulty."
+  },
+  {
+    "id": "GOLD_029",
+    "customer_text": "How many SkyMiles do I need for a roundtrip award ticket from NYC to London in October?",
+    "ground_truth_intent": "booking_reservation",
+    "true_escalation": false,
+    "escalation_reason": "General award ticket pricing inquiry; auto-handled with SkyMiles search instructions.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "award_travel",
+      "pricing_faq"
+    ],
+    "reference_reply": "Hello! Standard Delta guidelines apply. You can view full details or manage this anytime in the Fly Delta app or delta.com. *AI",
+    "annotation_notes": "Hand-curated benchmark case for booking_reservation with easy difficulty."
+  },
+  {
+    "id": "GOLD_030",
+    "customer_text": "My name on the ticket is misspelled (Johnatan instead of Jonathan). How can I correct it?",
+    "ground_truth_intent": "booking_reservation",
+    "true_escalation": true,
+    "escalation_reason": "Name correction on ticket required for TSA/Secure Flight compliance; requires human agent modification.",
+    "difficulty_tier": "medium",
+    "tags": [
+      "name_correction",
+      "tsa_compliance"
+    ],
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "annotation_notes": "Hand-curated benchmark case for booking_reservation with medium difficulty."
+  },
+  {
+    "id": "GOLD_031",
+    "customer_text": "What are the maximum dimensions for a carry-on bag on domestic Delta flights?",
+    "ground_truth_intent": "baggage_rules_faq",
+    "true_escalation": false,
+    "escalation_reason": "Standard baggage dimensions FAQ (22x14x9 inches); auto-handled with exact specifications.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "dimensions_faq",
+      "carry_on"
+    ],
+    "reference_reply": "Hello! Standard Delta guidelines apply. You can view full details or manage this anytime in the Fly Delta app or delta.com. *AI",
+    "annotation_notes": "Hand-curated benchmark case for baggage_rules_faq with easy difficulty."
+  },
+  {
+    "id": "GOLD_032",
+    "customer_text": "Can I bring my golf bag as checked luggage, and is there an oversize fee?",
+    "ground_truth_intent": "baggage_rules_faq",
+    "true_escalation": false,
+    "escalation_reason": "Sports equipment baggage policy; auto-handled with Delta sporting equipment guidelines.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "sports_equipment",
+      "policy"
+    ],
+    "reference_reply": "Hello! Standard Delta guidelines apply. You can view full details or manage this anytime in the Fly Delta app or delta.com. *AI",
+    "annotation_notes": "Hand-curated benchmark case for baggage_rules_faq with easy difficulty."
+  },
+  {
+    "id": "GOLD_033",
+    "customer_text": "Traveling with a small dog in cabin on DL 420. What is the pet fee and carrier requirements?",
+    "ground_truth_intent": "baggage_rules_faq",
+    "true_escalation": false,
+    "escalation_reason": "Pet in cabin policy; auto-handled with fee and approved carrier dimensions.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "pet_travel",
+      "policy_faq"
+    ],
+    "reference_reply": "Hello! Standard Delta guidelines apply. You can view full details or manage this anytime in the Fly Delta app or delta.com. *AI",
+    "annotation_notes": "Hand-curated benchmark case for baggage_rules_faq with easy difficulty."
+  },
+  {
+    "id": "GOLD_034",
+    "customer_text": "Can I pack lithium ion power banks in my checked suitcase?",
+    "ground_truth_intent": "baggage_rules_faq",
+    "true_escalation": false,
+    "escalation_reason": "FAA safety regulation (lithium batteries prohibited in cargo hold); critical safety auto-guidance.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "faa_safety",
+      "hazardous_materials"
+    ],
+    "reference_reply": "Hello! Standard Delta guidelines apply. You can view full details or manage this anytime in the Fly Delta app or delta.com. *AI",
+    "annotation_notes": "Hand-curated benchmark case for baggage_rules_faq with easy difficulty."
+  },
+  {
+    "id": "GOLD_035",
+    "customer_text": "How much does Delta charge for a second checked bag to Europe for Main Cabin?",
+    "ground_truth_intent": "baggage_rules_faq",
+    "true_escalation": false,
+    "escalation_reason": "International baggage allowance FAQ; auto-handled with standard fee breakdown.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "international_fees"
+    ],
+    "reference_reply": "Hello! Standard Delta guidelines apply. You can view full details or manage this anytime in the Fly Delta app or delta.com. *AI",
+    "annotation_notes": "Hand-curated benchmark case for baggage_rules_faq with easy difficulty."
+  },
+  {
+    "id": "GOLD_036",
+    "customer_text": "Can I bring a wedding dress in a garment bag as my carry-on item?",
+    "ground_truth_intent": "baggage_rules_faq",
+    "true_escalation": false,
+    "escalation_reason": "Garment bag carry-on policy; auto-handled with closet hanging availability guidance.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "wedding_dress",
+      "carry_on"
+    ],
+    "reference_reply": "Hello! Standard Delta guidelines apply. You can view full details or manage this anytime in the Fly Delta app or delta.com. *AI",
+    "annotation_notes": "Hand-curated benchmark case for baggage_rules_faq with easy difficulty."
+  },
+  {
+    "id": "GOLD_037",
+    "customer_text": "Are electric scooters or hoverboards permitted as checked or carry-on luggage?",
+    "ground_truth_intent": "baggage_rules_faq",
+    "true_escalation": false,
+    "escalation_reason": "Prohibited items policy (hoverboards banned due to fire safety); auto-handled with clear safety policy.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "prohibited_items",
+      "safety"
+    ],
+    "reference_reply": "Hello! Standard Delta guidelines apply. You can view full details or manage this anytime in the Fly Delta app or delta.com. *AI",
+    "annotation_notes": "Hand-curated benchmark case for baggage_rules_faq with easy difficulty."
+  },
+  {
+    "id": "GOLD_038",
+    "customer_text": "What is the weight limit for first class checked luggage on domestic routes?",
+    "ground_truth_intent": "baggage_rules_faq",
+    "true_escalation": false,
+    "escalation_reason": "Premium cabin baggage allowance FAQ (70 lbs vs 50 lbs); auto-handled directly.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "first_class_allowance"
+    ],
+    "reference_reply": "Hello! Standard Delta guidelines apply. You can view full details or manage this anytime in the Fly Delta app or delta.com. *AI",
+    "annotation_notes": "Hand-curated benchmark case for baggage_rules_faq with easy difficulty."
+  },
+  {
+    "id": "GOLD_039",
+    "customer_text": "Is free Wi-Fi with Delta Sync available on flight DL 1492 (Boeing 737-900)?",
+    "ground_truth_intent": "inflight_airport_service",
+    "true_escalation": false,
+    "escalation_reason": "Delta Sync Wi-Fi availability FAQ; auto-handled with fleet Wi-Fi overview.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "wifi_inquiry",
+      "delta_sync"
+    ],
+    "reference_reply": "Hello! Standard Delta guidelines apply. You can view full details or manage this anytime in the Fly Delta app or delta.com. *AI",
+    "annotation_notes": "Hand-curated benchmark case for inflight_airport_service with easy difficulty."
+  },
+  {
+    "id": "GOLD_040",
+    "customer_text": "The Wi-Fi on DL 898 did not work the entire 5 hour flight even though I paid $16. How do I get a refund?",
+    "ground_truth_intent": "inflight_airport_service",
+    "true_escalation": true,
+    "escalation_reason": "Viasat/Gogo inflight Wi-Fi billing refund; requires partner refund redirection or customer care credit.",
+    "difficulty_tier": "medium",
+    "tags": [
+      "wifi_refund",
+      "inflight_failure"
+    ],
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "annotation_notes": "Hand-curated benchmark case for inflight_airport_service with medium difficulty."
+  },
+  {
+    "id": "GOLD_041",
+    "customer_text": "Can I access the Delta Sky Club at Terminal 4 JFK with an Amex Platinum card?",
+    "ground_truth_intent": "inflight_airport_service",
+    "true_escalation": false,
+    "escalation_reason": "Sky Club access rules FAQ; auto-handled with official partnership access criteria.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "sky_club_access",
+      "partner_rules"
+    ],
+    "reference_reply": "Hello! Standard Delta guidelines apply. You can view full details or manage this anytime in the Fly Delta app or delta.com. *AI",
+    "annotation_notes": "Hand-curated benchmark case for inflight_airport_service with easy difficulty."
+  },
+  {
+    "id": "GOLD_042",
+    "customer_text": "Do you offer vegan or gluten-free meals on transatlantic flights in economy?",
+    "ground_truth_intent": "inflight_airport_service",
+    "true_escalation": false,
+    "escalation_reason": "Special dietary meals policy; auto-handled with 24-hour advance ordering instructions.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "special_meals",
+      "catering_faq"
+    ],
+    "reference_reply": "Hello! Standard Delta guidelines apply. You can view full details or manage this anytime in the Fly Delta app or delta.com. *AI",
+    "annotation_notes": "Hand-curated benchmark case for inflight_airport_service with easy difficulty."
+  },
+  {
+    "id": "GOLD_043",
+    "customer_text": "In-flight entertainment screen at seat 24A on DL 201 has been frozen and black since takeoff. Flight attendant tried resetting, didn't work.",
+    "ground_truth_intent": "inflight_airport_service",
+    "true_escalation": true,
+    "escalation_reason": "In-flight entertainment system failure on long flight; eligible for gesture of goodwill SkyMiles credit via human agent.",
+    "difficulty_tier": "medium",
+    "tags": [
+      "ife_broken",
+      "goodwill_gesture"
+    ],
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "annotation_notes": "Hand-curated benchmark case for inflight_airport_service with medium difficulty."
+  },
+  {
+    "id": "GOLD_044",
+    "customer_text": "Are power outlets available at every seat on the Airbus A321?",
+    "ground_truth_intent": "inflight_airport_service",
+    "true_escalation": false,
+    "escalation_reason": "Aircraft cabin amenities FAQ; auto-handled with in-seat power specifications.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "seat_power",
+      "fleet_faq"
+    ],
+    "reference_reply": "Hello! Standard Delta guidelines apply. You can view full details or manage this anytime in the Fly Delta app or delta.com. *AI",
+    "annotation_notes": "Hand-curated benchmark case for inflight_airport_service with easy difficulty."
+  },
+  {
+    "id": "GOLD_045",
+    "customer_text": "Gate agent at Atlanta gate A18 was astonishingly rude, rolling eyes and shouting at elderly passengers!",
+    "ground_truth_intent": "complaint_staff_service",
+    "true_escalation": true,
+    "escalation_reason": "Staff conduct complaint involving vulnerable passengers; human customer care escalation mandatory.",
+    "difficulty_tier": "hard",
+    "tags": [
+      "staff_misconduct",
+      "elderly_passenger",
+      "reputation_risk"
+    ],
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "annotation_notes": "Hand-curated benchmark case for complaint_staff_service with hard difficulty."
+  },
+  {
+    "id": "GOLD_046",
+    "customer_text": "Flight attendant on DL 620 refused to help an injured passenger stow their bag and made a mocking remark.",
+    "ground_truth_intent": "complaint_staff_service",
+    "true_escalation": true,
+    "escalation_reason": "Serious crew conduct complaint involving injury; requires formal customer care investigation.",
+    "difficulty_tier": "hard",
+    "tags": [
+      "crew_misconduct",
+      "safety_concern"
+    ],
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "annotation_notes": "Hand-curated benchmark case for complaint_staff_service with hard difficulty."
+  },
+  {
+    "id": "GOLD_047",
+    "customer_text": "Waited 2 hours on your customer support phone line only to be hung up on by the representative. Total disgrace.",
+    "ground_truth_intent": "complaint_staff_service",
+    "true_escalation": true,
+    "escalation_reason": "High customer frustration regarding phone support abandonment; requires human agent outreach.",
+    "difficulty_tier": "medium",
+    "tags": [
+      "phone_support_failure",
+      "frustration"
+    ],
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "annotation_notes": "Hand-curated benchmark case for complaint_staff_service with medium difficulty."
+  },
+  {
+    "id": "GOLD_048",
+    "customer_text": "Terrible boarding process in Detroit today, total chaos with Zone 1 and 2 stampeding the gate.",
+    "ground_truth_intent": "complaint_staff_service",
+    "true_escalation": true,
+    "escalation_reason": "Airport operational feedback and boarding complaint; logged for station manager review.",
+    "difficulty_tier": "medium",
+    "tags": [
+      "boarding_complaint",
+      "feedback"
+    ],
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "annotation_notes": "Hand-curated benchmark case for complaint_staff_service with medium difficulty."
+  },
+  {
+    "id": "GOLD_049",
+    "customer_text": "Delta used to be my favorite airline, but your service quality has cratered this year.",
+    "ground_truth_intent": "complaint_staff_service",
+    "true_escalation": true,
+    "escalation_reason": "High-tier loyal customer expressing systemic dissatisfaction; human retention review.",
+    "difficulty_tier": "medium",
+    "tags": [
+      "brand_dissatisfaction",
+      "loyalty_risk"
+    ],
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "annotation_notes": "Hand-curated benchmark case for complaint_staff_service with medium difficulty."
+  },
+  {
+    "id": "GOLD_050",
+    "customer_text": "Shout out to flight attendant Sarah on DL 1844 for making my 4-year-old's first flight so magical! Thank you Delta! ❤️",
+    "ground_truth_intent": "general_greeting_gratitude",
+    "true_escalation": false,
+    "escalation_reason": "Positive staff compliment; auto-handled with warm gratitude and internal recognition logging prompt.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "compliment",
+      "crew_praise"
+    ],
+    "reference_reply": "Hello! Standard Delta guidelines apply. You can view full details or manage this anytime in the Fly Delta app or delta.com. *AI",
+    "annotation_notes": "Hand-curated benchmark case for general_greeting_gratitude with easy difficulty."
+  },
+  {
+    "id": "GOLD_051",
+    "customer_text": "Good morning Delta team, hope you all have a smooth operation today!",
+    "ground_truth_intent": "general_greeting_gratitude",
+    "true_escalation": false,
+    "escalation_reason": "Casual polite greeting; auto-handled with courteous brand greeting.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "casual_greeting"
+    ],
+    "reference_reply": "Hello! Standard Delta guidelines apply. You can view full details or manage this anytime in the Fly Delta app or delta.com. *AI",
+    "annotation_notes": "Hand-curated benchmark case for general_greeting_gratitude with easy difficulty."
+  },
+  {
+    "id": "GOLD_052",
+    "customer_text": "Thank you for sorting out our flight change yesterday in Minneapolis, agent Mark was fantastic!",
+    "ground_truth_intent": "general_greeting_gratitude",
+    "true_escalation": false,
+    "escalation_reason": "Gratitude for previous resolution; auto-handled with appreciative brand acknowledgment.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "gratitude",
+      "positive_feedback"
+    ],
+    "reference_reply": "Hello! Standard Delta guidelines apply. You can view full details or manage this anytime in the Fly Delta app or delta.com. *AI",
+    "annotation_notes": "Hand-curated benchmark case for general_greeting_gratitude with easy difficulty."
+  },
+  {
+    "id": "GOLD_053",
+    "customer_text": "Just wanted to say the new Airbus A321neo interior is stunning. Best flight experience in years.",
+    "ground_truth_intent": "general_greeting_gratitude",
+    "true_escalation": false,
+    "escalation_reason": "Positive product feedback; auto-handled with brand appreciation.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "product_praise"
+    ],
+    "reference_reply": "Hello! Standard Delta guidelines apply. You can view full details or manage this anytime in the Fly Delta app or delta.com. *AI",
+    "annotation_notes": "Hand-curated benchmark case for general_greeting_gratitude with easy difficulty."
+  },
+  {
+    "id": "GOLD_054",
+    "customer_text": "@DELTA i booked my flight using delta amex card. Checking in now &amp; was being charged for baggage",
+    "ground_truth_intent": "baggage_issue",
+    "true_escalation": true,
+    "escalation_reason": "Specific reservation lookup or active flight intervention requires human agent access to internal Delta tools.",
+    "difficulty_tier": "medium",
+    "tags": [
+      "account_lookup",
+      "human_agent"
+    ],
+    "reference_reply": "@115818 Glad to check. Pls, DM your confirmation number for assistance.  *QB https://t.co/6iDGBJAc2m",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 609."
+  },
+  {
+    "id": "GOLD_055",
+    "customer_text": "@Delta why wasn't earlier flight offered when I tried to rebook, not cool at all. Just happened to look at moniter after deplaning.",
+    "ground_truth_intent": "flight_disruption",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@115882 I'm sorry. The earlier flight may not have been available at the time of your scheduled change. *TMT",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 790."
+  },
+  {
+    "id": "GOLD_056",
+    "customer_text": "@Delta I'm flying JFK-MEX-MID tomorrow and you say I'm booked in, but it looks like it's just the first leg. Can you check, please?",
+    "ground_truth_intent": "booking_reservation",
+    "true_escalation": true,
+    "escalation_reason": "Specific reservation lookup or active flight intervention requires human agent access to internal Delta tools.",
+    "difficulty_tier": "medium",
+    "tags": [
+      "account_lookup",
+      "human_agent"
+    ],
+    "reference_reply": "@115885 Hi, Richard. Can you pls DM your confirmation number so I may look into this matter for you? Thanks! *TJF https://t.co/6iDGBJAc2m",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 813."
+  },
+  {
+    "id": "GOLD_057",
+    "customer_text": "@delta #delta moves you to #dm the moment you have a #complaint with no results. Just got some #bs #answers but no real reason why they changed our #seating!",
+    "ground_truth_intent": "booking_reservation",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@115886 We sincerely apologize for your disappointment. We always strive to create a positive customer experience. *AJC",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 815."
+  },
+  {
+    "id": "GOLD_058",
+    "customer_text": "@Delta Same again! #equipment #change #no #guaranteed #seats #apologies I’ll DM you if you can give me a #real #answer and no #standard #bs #answers",
+    "ground_truth_intent": "booking_reservation",
+    "true_escalation": true,
+    "escalation_reason": "Specific reservation lookup or active flight intervention requires human agent access to internal Delta tools.",
+    "difficulty_tier": "medium",
+    "tags": [
+      "account_lookup",
+      "human_agent"
+    ],
+    "reference_reply": "@115886 I would be glad to look into this for you.  *TBT",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 820."
+  },
+  {
+    "id": "GOLD_059",
+    "customer_text": "@Delta OK it was not a full flight, #equipment change had nothing to do with comfort class, no #disabilities (and a handling agent telling #customer #care would take care of us) So please non of these as an excuse! I’ll retwitter your reply! Thanks",
+    "ground_truth_intent": "complaint_staff_service",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@115886 Thanks for your patience. *HCK",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 822."
+  },
+  {
+    "id": "GOLD_060",
+    "customer_text": "@Delta OK it was not a full flight, #equipment change had nothing to do with comfort class, no #disabilities (and a handling agent telling #customer #care would take care of us) So please non of these as an excuse! I’ll retwitter your reply! Thanks",
+    "ground_truth_intent": "complaint_staff_service",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@115886 Thanks!  *HCK",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 823."
+  },
+  {
+    "id": "GOLD_061",
+    "customer_text": "@Delta OK it was not a full flight, #equipment change had nothing to do with comfort class, no #disabilities (and a handling agent telling #customer #care would take care of us) So please non of these as an excuse! I’ll retwitter your reply! Thanks",
+    "ground_truth_intent": "complaint_staff_service",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@115886 Thank you for being the most important part of Delta.  https://t.co/YfI5Cj9udk *HCK",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 824."
+  },
+  {
+    "id": "GOLD_062",
+    "customer_text": "@Delta OK it was not a full flight, #equipment change had nothing to do with comfort class, no #disabilities (and a handling agent telling #customer #care would take care of us) So please non of these as an excuse! I’ll retwitter your reply! Thanks",
+    "ground_truth_intent": "complaint_staff_service",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@115886 I am including a link of our Commitment to our customers, please let us know if we can be of further assistance.  *HCK",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 825."
+  },
+  {
+    "id": "GOLD_063",
+    "customer_text": "@Delta OK it was not a full flight, #equipment change had nothing to do with comfort class, no #disabilities (and a handling agent telling #customer #care would take care of us) So please non of these as an excuse! I’ll retwitter your reply! Thanks",
+    "ground_truth_intent": "complaint_staff_service",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@115886 It can be difficult to assign the same seating because the aircraft configuration may be different.  *HCK",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 826."
+  },
+  {
+    "id": "GOLD_064",
+    "customer_text": "@Delta OK it was not a full flight, #equipment change had nothing to do with comfort class, no #disabilities (and a handling agent telling #customer #care would take care of us) So please non of these as an excuse! I’ll retwitter your reply! Thanks",
+    "ground_truth_intent": "complaint_staff_service",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@115886 ...possible. *HCK 2/2",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 827."
+  },
+  {
+    "id": "GOLD_065",
+    "customer_text": "@Delta OK it was not a full flight, #equipment change had nothing to do with comfort class, no #disabilities (and a handling agent telling #customer #care would take care of us) So please non of these as an excuse! I’ll retwitter your reply! Thanks",
+    "ground_truth_intent": "complaint_staff_service",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@115886 Unfortunately, we are not able to guarantee seats nor flight schedules.  *HCK",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 828."
+  },
+  {
+    "id": "GOLD_066",
+    "customer_text": "@Delta OK it was not a full flight, #equipment change had nothing to do with comfort class, no #disabilities (and a handling agent telling #customer #care would take care of us) So please non of these as an excuse! I’ll retwitter your reply! Thanks",
+    "ground_truth_intent": "complaint_staff_service",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@115886 Hi Caesar, I thank you for your patience. I had an opportunity to read the thread. *HCK",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 829."
+  },
+  {
+    "id": "GOLD_067",
+    "customer_text": "@Delta OK it was not a full flight, #equipment change had nothing to do with comfort class, no #disabilities (and a handling agent telling #customer #care would take care of us) So please non of these as an excuse! I’ll retwitter your reply! Thanks",
+    "ground_truth_intent": "complaint_staff_service",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@115886 Please remember that help is just a tweet away. Have a wonderful evening.  *HCK",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 830."
+  },
+  {
+    "id": "GOLD_068",
+    "customer_text": "@Delta Obviously you didn't read what already was said before, you do give exactly the same bs answers. I know there is no guarantee but I like to know why they moved us. I know, because a #Delta employee was sitting in my seat and you can't say that 😡😡😡",
+    "ground_truth_intent": "booking_reservation",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@115886 ...guaranteed. It was changed because operational needs required such.  *ABN 3/3",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 837."
+  },
+  {
+    "id": "GOLD_069",
+    "customer_text": "@Delta Obviously you didn't read what already was said before, you do give exactly the same bs answers. I know there is no guarantee but I like to know why they moved us. I know, because a #Delta employee was sitting in my seat and you can't say that 😡😡😡",
+    "ground_truth_intent": "booking_reservation",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@115886 ...to shift. Because of such, though we try our best to honor seat requests, do note - it's just that, a request and is not... 2/3",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 838."
+  },
+  {
+    "id": "GOLD_070",
+    "customer_text": "@Delta Obviously you didn't read what already was said before, you do give exactly the same bs answers. I know there is no guarantee but I like to know why they moved us. I know, because a #Delta employee was sitting in my seat and you can't say that 😡😡😡",
+    "ground_truth_intent": "booking_reservation",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@115886 I understand your frustration and apologize again for your experience. As previously explained, schedule changes occur causing seats... 1/3",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 839."
+  },
+  {
+    "id": "GOLD_071",
+    "customer_text": "@Delta OK it was not a full flight, #equipment change had nothing to do with comfort class, no #disabilities (and a handling agent telling #customer #care would take care of us) So please non of these as an excuse! I’ll retwitter your reply! Thanks",
+    "ground_truth_intent": "complaint_staff_service",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@115886 Thank you for being the most important part of Delta.  *HCK",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 831."
+  },
+  {
+    "id": "GOLD_072",
+    "customer_text": "@Delta OK it was not a full flight, #equipment change had nothing to do with comfort class, no #disabilities (and a handling agent telling #customer #care would take care of us) So please non of these as an excuse! I’ll retwitter your reply! Thanks",
+    "ground_truth_intent": "complaint_staff_service",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@115886 May I have your ticket number, please? Unfortunately, the confirmation provide is no longer active.  *HCK",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 832."
+  },
+  {
+    "id": "GOLD_073",
+    "customer_text": "@Delta OK it was not a full flight, #equipment change had nothing to do with comfort class, no #disabilities (and a handling agent telling #customer #care would take care of us) So please non of these as an excuse! I’ll retwitter your reply! Thanks",
+    "ground_truth_intent": "complaint_staff_service",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@115886 Good evening, Caesar!  *HCK",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 833."
+  },
+  {
+    "id": "GOLD_074",
+    "customer_text": "@Delta OK it was not a full flight, #equipment change had nothing to do with comfort class, no #disabilities (and a handling agent telling #customer #care would take care of us) So please non of these as an excuse! I’ll retwitter your reply! Thanks",
+    "ground_truth_intent": "complaint_staff_service",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@115886 I would like to sincerely apologize for the stress, frustration, and the inconvenience that you endured due to an equipment change.  *HCK",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 834."
+  },
+  {
+    "id": "GOLD_075",
+    "customer_text": "@Delta OK it was not a full flight, #equipment change had nothing to do with comfort class, no #disabilities (and a handling agent telling #customer #care would take care of us) So please non of these as an excuse! I’ll retwitter your reply! Thanks",
+    "ground_truth_intent": "complaint_staff_service",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@115886 In the event of an equipment change, we put forth our best efforts to seat everyone together as they were, but sometimes that is not... 1/2",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 835."
+  },
+  {
+    "id": "GOLD_076",
+    "customer_text": "Dear cute flight attendant @delta. I’m board...just sayin’",
+    "ground_truth_intent": "complaint_staff_service",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@116120 Oh! Thanks for noticing! 😃 *TMT",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 1839."
+  },
+  {
+    "id": "GOLD_077",
+    "customer_text": "@Delta Yes. And isn’t diverted?!",
+    "ground_truth_intent": "flight_disruption",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@116121 Great! Please let us know if we can assist.  *HRO",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 1841."
+  },
+  {
+    "id": "GOLD_078",
+    "customer_text": "@Delta hi. Any news why DL1262 diverted to AUS and DL1738 to SMF? Thanks",
+    "ground_truth_intent": "flight_disruption",
+    "true_escalation": true,
+    "escalation_reason": "Customer tweet contains private reservation details/PNR; must be routed to DM for secure human resolution.",
+    "difficulty_tier": "hard",
+    "tags": [
+      "pii_detected",
+      "dm_required"
+    ],
+    "reference_reply": "@116121 I am showing DL 1262 is from LAS JFK?  *HRO",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 1843."
+  },
+  {
+    "id": "GOLD_079",
+    "customer_text": "@Delta hi. Any news why DL1262 diverted to AUS and DL1738 to SMF? Thanks",
+    "ground_truth_intent": "flight_disruption",
+    "true_escalation": true,
+    "escalation_reason": "Customer tweet contains private reservation details/PNR; must be routed to DM for secure human resolution.",
+    "difficulty_tier": "hard",
+    "tags": [
+      "pii_detected",
+      "dm_required"
+    ],
+    "reference_reply": "@116121 Oh ok.  Thanks for checking with us and we are here for you.  *HRO",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 1845."
+  },
+  {
+    "id": "GOLD_080",
+    "customer_text": "@Delta I sent you guys a DM about a story! Thanks in advance for any help you can provide. 🎃",
+    "ground_truth_intent": "general_greeting_gratitude",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@116122 Please follow this link for your request. Thank you.  https://t.co/an5C61CZZt *TMT",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 1847."
+  },
+  {
+    "id": "GOLD_081",
+    "customer_text": "@Delta I love the sky lounge access. Thank you. Imagine if they had a \"dark or more dim room\" to relax. That's next level!!",
+    "ground_truth_intent": "inflight_airport_service",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@116124 Enjoy, have a great week. 😊 *TBT",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 1853."
+  },
+  {
+    "id": "GOLD_082",
+    "customer_text": "@Delta hi. Any news why DL1262 diverted to AUS and DL1738 to SMF? Thanks",
+    "ground_truth_intent": "flight_disruption",
+    "true_escalation": true,
+    "escalation_reason": "Customer tweet contains private reservation details/PNR; must be routed to DM for secure human resolution.",
+    "difficulty_tier": "hard",
+    "tags": [
+      "pii_detected",
+      "dm_required"
+    ],
+    "reference_reply": "@116121 Oh no! One moment as I take a look.  *HRO",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 1846."
+  },
+  {
+    "id": "GOLD_083",
+    "customer_text": "@Delta Can I get the 35$ refunded for the seat cost I never got?",
+    "ground_truth_intent": "booking_reservation",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@77483 Please use the link to provide your confirmation #. *ABN https://t.co/6iDGBJAc2m",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 1861."
+  },
+  {
+    "id": "GOLD_084",
+    "customer_text": "@Delta booked a code share Korean Air flight on https://t.co/xFTVohudJC; where can I find my confirmation # or ticket # for the KE portion?",
+    "ground_truth_intent": "booking_reservation",
+    "true_escalation": true,
+    "escalation_reason": "Customer tweet contains private reservation details/PNR; must be routed to DM for secure human resolution.",
+    "difficulty_tier": "hard",
+    "tags": [
+      "pii_detected",
+      "dm_required"
+    ],
+    "reference_reply": "@116126 I’d be delighted to assist. Please follow and DM your confirmation number.  *AFC https://t.co/6iDGBJAc2m",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 1862."
+  },
+  {
+    "id": "GOLD_085",
+    "customer_text": "@Delta Just giving credit where it's due.  Thank you",
+    "ground_truth_intent": "general_greeting_gratitude",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@116371 Will do, have a great week.😊 *TBT",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 2790."
+  },
+  {
+    "id": "GOLD_086",
+    "customer_text": "Dear @Delta, thank you for providing excellent service &amp; employees who truly care about the customer experience.  You stand out in the crowd",
+    "ground_truth_intent": "complaint_staff_service",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@116371 Wow, that's what we love to hear! We appreciate your loyalty and support. Thank you for choosing Delta. 😊 *HKC",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 2792."
+  },
+  {
+    "id": "GOLD_087",
+    "customer_text": "Thanks to the @Delta gate agent at D7 at @116373 for being so kind. This airport is great! Get why it’s voted tops so often.",
+    "ground_truth_intent": "flight_disruption",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@116372 @116373 Hi Jamie! Thanks for the awesome compliment for our PDX staff member. Happy travels. 😊 *HKC",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 2795."
+  },
+  {
+    "id": "GOLD_088",
+    "customer_text": "@Delta what are the under seat dimensions?",
+    "ground_truth_intent": "booking_reservation",
+    "true_escalation": true,
+    "escalation_reason": "Specific reservation lookup or active flight intervention requires human agent access to internal Delta tools.",
+    "difficulty_tier": "medium",
+    "tags": [
+      "account_lookup",
+      "human_agent"
+    ],
+    "reference_reply": "@116448 Pls follow/DM your confirmation or ticket number to take a look. *AFM https://t.co/6iDGBJAc2m",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 3189."
+  },
+  {
+    "id": "GOLD_089",
+    "customer_text": "@Delta Would this be classified as a personal item? Your website does not have dimensions for personal items. https://t.co/EToe4qVuHb",
+    "ground_truth_intent": "baggage_rules_faq",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@116448 Hi Justin. The equivalent of a personal item is one similar to a purse or backpack. As long as this item fits under the seat in front of you, you should be okay. *TKR",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 3191."
+  },
+  {
+    "id": "GOLD_090",
+    "customer_text": "@delta extremely disappointed in your service at SFO. Gate agents are terribly and not helpful at all. #goldmember",
+    "ground_truth_intent": "flight_disruption",
+    "true_escalation": true,
+    "escalation_reason": "Specific reservation lookup or active flight intervention requires human agent access to internal Delta tools.",
+    "difficulty_tier": "medium",
+    "tags": [
+      "account_lookup",
+      "human_agent"
+    ],
+    "reference_reply": "@116451 Please follow and DM your confirmation number.  *AFC https://t.co/6iDGBJAc2m",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 3195."
+  },
+  {
+    "id": "GOLD_091",
+    "customer_text": "@delta extremely disappointed in your service at SFO. Gate agents are terribly and not helpful at all. #goldmember",
+    "ground_truth_intent": "flight_disruption",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@116451 I would ask you please to avoid the use of that type of language.  *AFC",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 3197."
+  },
+  {
+    "id": "GOLD_092",
+    "customer_text": "@Delta Thanks. I’m on an international flight so I’ve got time.  🙂",
+    "ground_truth_intent": "general_greeting_gratitude",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@116456 Sure thing. So you would like to go ahead and be added to the upgrade waitlist? *ACJ",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 3217."
+  },
+  {
+    "id": "GOLD_093",
+    "customer_text": "@Delta Ok thanks.",
+    "ground_truth_intent": "general_greeting_gratitude",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@116456 Sure thing! Have a great flight. We truly appreciate your loyalty to our brand! *ACJ",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 3223."
+  },
+  {
+    "id": "GOLD_094",
+    "customer_text": "@delta extremely disappointed in your service at SFO. Gate agents are terribly and not helpful at all. #goldmember",
+    "ground_truth_intent": "flight_disruption",
+    "true_escalation": true,
+    "escalation_reason": "Specific reservation lookup or active flight intervention requires human agent access to internal Delta tools.",
+    "difficulty_tier": "medium",
+    "tags": [
+      "account_lookup",
+      "human_agent"
+    ],
+    "reference_reply": "@116451 I hear the frustration. If you care to share details, please follow and DM details. *AFC https://t.co/6iDGBJAc2m",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 3198."
+  },
+  {
+    "id": "GOLD_095",
+    "customer_text": "@Delta why would pilot land 55 mins early no gate avail? DL 088 on ground LAX we are stuck in seats plz let us use the lav 😳🚽#legscrossed",
+    "ground_truth_intent": "flight_disruption",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@116457 We appreciate your constructive feedback and are taking it under serious advisement.  *AFC",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 3225."
+  },
+  {
+    "id": "GOLD_096",
+    "customer_text": "@Delta Thx for reply. Understand the concern for safety. Otherwise great flight appreciate getting us home safe during very busy holiday weekend.",
+    "ground_truth_intent": "general_greeting_gratitude",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@116457 On behalf of AFC, again, we appreciate your feedback. *ACJ",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 3228."
+  },
+  {
+    "id": "GOLD_097",
+    "customer_text": "@116459 @75659 @75660 @Delta Thanks a lot... Great start of Great event",
+    "ground_truth_intent": "general_greeting_gratitude",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@116458 Hello, Ismail. Thank you for sharing.  *AFM",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 3231."
+  },
+  {
+    "id": "GOLD_098",
+    "customer_text": "@Delta I checked in for my flight that’s  tomorrow and I was moved seats. I was originally on the aisle. I’m hoping you can help?",
+    "ground_truth_intent": "booking_reservation",
+    "true_escalation": true,
+    "escalation_reason": "Specific reservation lookup or active flight intervention requires human agent access to internal Delta tools.",
+    "difficulty_tier": "medium",
+    "tags": [
+      "account_lookup",
+      "human_agent"
+    ],
+    "reference_reply": "@116460 Hello, Maggi. I'll be glad to check for you. Please DM your confirmation number for privacy. *TAC https://t.co/6iDGBJAc2m",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 3234."
+  },
+  {
+    "id": "GOLD_099",
+    "customer_text": "@Delta I was disappointed yesterday in flight 2468 when WIFI was offered but it did not work. I couldn’t get work I planned on doing done.",
+    "ground_truth_intent": "inflight_airport_service",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@116461 Cooper, I'm sorry about the Wi-Fi! Please, be sure to report the matter to our Wi-Fi partner Gogo at @116462 or 1.877.350.0038. They need to get details from you of any messages or details you got during your attempt. *AFM",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 3237."
+  },
+  {
+    "id": "GOLD_100",
+    "customer_text": "@Delta Thank you.",
+    "ground_truth_intent": "general_greeting_gratitude",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@116463 On behalf of *TAC, you are very welcome. *AFM",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 3239."
+  },
+  {
+    "id": "GOLD_101",
+    "customer_text": "@Delta :( Spent money on a ticket, online system says I could get a full refund. I did not. Your costumer service rep wanted me to beg another department for credit and refused to help me. #MoneyStolen #SomuchForChristmas",
+    "ground_truth_intent": "booking_reservation",
+    "true_escalation": true,
+    "escalation_reason": "High customer distress / severe operational disruption requiring empathetic human agent intervention.",
+    "difficulty_tier": "hard",
+    "tags": [
+      "high_distress",
+      "escalation"
+    ],
+    "reference_reply": "@116464 Hey there. To qualify for a full refund you would have to cancel your reservation within 24 hours of the purchase being made. Otherwise, you are subject to fees and or difference in fare. I hope this helps clarify your concerns, today.  *HFG",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 3243."
+  },
+  {
+    "id": "GOLD_102",
+    "customer_text": "The flight attendant and pilot on @Delta flight 4985 were nothing short of amazing. Super kind, helpful, and funny. Wish they were my crew every time I fly!",
+    "ground_truth_intent": "complaint_staff_service",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@116468 Hi Kyle, thanks for recognizing our employees. We're proud of our crew too. Every day our team is working to make flying with us better! *TMB",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 3258."
+  },
+  {
+    "id": "GOLD_103",
+    "customer_text": "Hey @Delta how are you going to charge me to move to an earlier flight, not move my luggage to my flight and THEN tell me you can’t deliver my luggage b/c I ‘voluntarily separated’ from it?! I didn’t ‘voluntarily’ leave my bag. 🤷🏼‍♀️",
+    "ground_truth_intent": "baggage_issue",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@116469 Hi Kelli. I truly regret the frustration we've caused you. Please contact our Baggage Service Center at 800-325-8224 and are open from 7:00 AM - 1:00 AM.  *TKR",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 3260."
+  },
+  {
+    "id": "GOLD_104",
+    "customer_text": "@Delta Hi @Delta, thanks so much for your timely &amp; sincere reply. This is part of the reason I remain a loyal #silvermedallion member. Your generous offer of 5K skymiles for both my wife &amp; I is accepted &amp; appreciated. Please reply or direct message me if you need contact details.",
+    "ground_truth_intent": "booking_reservation",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@116470 Hello, John. Our system shows you were already compensated for flight 4459 today with $100.00 Delta travel vouchers for each of you. Unfortunately, I cannot double compensate for the same flight. I am sorry to disappoint.  *TAC",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 3264."
+  },
+  {
+    "id": "GOLD_105",
+    "customer_text": "@Delta Hi @Delta, I heard back over the phone after our correspondence earlier. I am happy with the accommodation &amp; understand you cannot do both. Thank you and I appreciate your getting back to me.",
+    "ground_truth_intent": "general_greeting_gratitude",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@116470 You're most welcome. We are here for you 24/7. Tweet us anytime! *TAC",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 3267."
+  },
+  {
+    "id": "GOLD_106",
+    "customer_text": "@116471 @Delta Thx for the support @116471 - hopefully @delta will do the right thing for Jennifer &amp; I in this frustrating episode &amp; address DTW cust. service issues ....",
+    "ground_truth_intent": "complaint_staff_service",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@116470 I can authorize 5,000 bonus Skymiles be deposited into each of your SkyMiles accounts as a gesture for the inconvenience. (2/2) *TAC",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 3268."
+  },
+  {
+    "id": "GOLD_107",
+    "customer_text": "@Delta This is nuts, sitting at gate waiting for “catering” hope that means you’re feeding the whole plane of frustrated passengers. Travel vouchers??? 4+ hours delayed and still we wait... not fun indeed!",
+    "ground_truth_intent": "flight_disruption",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@116476 I apologize deeply for the delay. We hope to have you on your way as soon as possible.  *HFG",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 3290."
+  },
+  {
+    "id": "GOLD_108",
+    "customer_text": "@Delta DL1704 deplaned at DTW now were sitting at the gate without any updates. Please let us know what’s next",
+    "ground_truth_intent": "flight_disruption",
+    "true_escalation": true,
+    "escalation_reason": "Customer tweet contains private reservation details/PNR; must be routed to DM for secure human resolution.",
+    "difficulty_tier": "hard",
+    "tags": [
+      "pii_detected",
+      "dm_required"
+    ],
+    "reference_reply": "@116476 Hello, Holly. I do apologize for the delay. Delays are never fun. They are working hard to get you in the air ASAP. As of now, your flight is estimated to depart at 5:45 pm and estimated to arrive at 8:46 pm. *TAC",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 3292."
+  },
+  {
+    "id": "GOLD_109",
+    "customer_text": "@Delta Great, I also have a question regarding baggage allowance. Could I leave a DM?",
+    "ground_truth_intent": "baggage_issue",
+    "true_escalation": true,
+    "escalation_reason": "Specific reservation lookup or active flight intervention requires human agent access to internal Delta tools.",
+    "difficulty_tier": "medium",
+    "tags": [
+      "account_lookup",
+      "human_agent"
+    ],
+    "reference_reply": "@116477 Sure, Jun. Please DM with your questions or concerns. *ACJ",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 3294."
+  },
+  {
+    "id": "GOLD_110",
+    "customer_text": "@Delta Hi! Trying to cancel award booking that I booked in less than 24 hours online and it says that I have to pay to cancel. could you help me with cancellation?",
+    "ground_truth_intent": "flight_disruption",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@116477 May I have your confirmation number? *AFC https://t.co/6iDGBJAc2m",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 3299."
+  },
+  {
+    "id": "GOLD_111",
+    "customer_text": "Our pilot and copilot on @Delta tonight!! Love it!! https://t.co/8KLFF97si9",
+    "ground_truth_intent": "general_greeting_gratitude",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@116645 😎, Have a great week. 😊 *TBT",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 3830."
+  },
+  {
+    "id": "GOLD_112",
+    "customer_text": "Well, this sure makes for an easy connection.  It seems I always get them at the least necessary times though... #firstworldproblems @Delta https://t.co/mWOUBhSKuE",
+    "ground_truth_intent": "flight_disruption",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@116882 Thanks for sharing your feedback with us Travis. We will be sure to share your concerns with Leadership. *HKC",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 4988."
+  },
+  {
+    "id": "GOLD_113",
+    "customer_text": "@Delta Just noticed the zipper was broken off yesterday morning on my return flight&amp;it wasn't like that when I left?😥is there help? #notcool https://t.co/VIm6mmForU",
+    "ground_truth_intent": "general_greeting_gratitude",
+    "true_escalation": true,
+    "escalation_reason": "High customer distress / severe operational disruption requiring empathetic human agent intervention.",
+    "difficulty_tier": "hard",
+    "tags": [
+      "high_distress",
+      "escalation"
+    ],
+    "reference_reply": "@117166 That's not good. Please return to the airport and file a Damaged Bag Report with our Baggage Service Center. I'm sorry for the trouble. *AMC",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 6609."
+  },
+  {
+    "id": "GOLD_114",
+    "customer_text": "@Delta I've been busy with life. How long do I have to file a claim regarding this?  Or is this a lost cause at this point?",
+    "ground_truth_intent": "baggage_issue",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@117166 Hi, there. You must report your claim within 24 hours for U.S. travel and seven days for international travel.  *TCH",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 6614."
+  },
+  {
+    "id": "GOLD_115",
+    "customer_text": "@Delta I should've known there was a catch...flight delayed 😏",
+    "ground_truth_intent": "flight_disruption",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@117180 Sorry to hear that, Davina. The airport is experiencing Air Traffic congestion at this time. Hoping to have you on your way soon.  *ALA",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 6906."
+  },
+  {
+    "id": "GOLD_116",
+    "customer_text": "My flight back to SF just got upgraded 🙌🏾 thanks @Delta! 😊",
+    "ground_truth_intent": "booking_reservation",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@117180 Congrats on the upgrade, Davina! Enjoy! ✈💺✈ *ACJ",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 6908."
+  },
+  {
+    "id": "GOLD_117",
+    "customer_text": "@Delta When a flight attendant  states in front of the passengers that she is tired of the call bells going off- it's an issue with the service.",
+    "ground_truth_intent": "complaint_staff_service",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@117185 We appreciate your constructive feedback and are taking it under serious advisement. Thank you for helping us to be better. *AFC",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 6922."
+  },
+  {
+    "id": "GOLD_118",
+    "customer_text": "@Delta you suck! 9 hr flt w/o entertainment or wkg jacks. Staff rude. Free Wifi -not with over 200 people! Time to shred the DSM card!",
+    "ground_truth_intent": "inflight_airport_service",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@117185 We are continuously striving to provide the best service, thank you for sharing your feedback. We are a tweet away if you need us. *AFC",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 6924."
+  },
+  {
+    "id": "GOLD_119",
+    "customer_text": "@Delta stuck on the tarmac for one hour in a hot plane flight DL2170 From SLC losing Thousands on a business deal in LA! Unexceptable!",
+    "ground_truth_intent": "flight_disruption",
+    "true_escalation": true,
+    "escalation_reason": "Customer tweet contains private reservation details/PNR; must be routed to DM for secure human resolution.",
+    "difficulty_tier": "hard",
+    "tags": [
+      "pii_detected",
+      "dm_required"
+    ],
+    "reference_reply": "@117522 Our teams are working to get you safely to LAX asap. My apologies for the delayed flight and the conditions. *HJH",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 8659."
+  },
+  {
+    "id": "GOLD_120",
+    "customer_text": "@Delta stuck on the tarmac for one hour in a hot plane flight DL2170 From SLC losing Thousands on a business deal in LA! Unexceptable!",
+    "ground_truth_intent": "flight_disruption",
+    "true_escalation": true,
+    "escalation_reason": "Customer tweet contains private reservation details/PNR; must be routed to DM for secure human resolution.",
+    "difficulty_tier": "hard",
+    "tags": [
+      "pii_detected",
+      "dm_required"
+    ],
+    "reference_reply": "@117522 Hi, Sherry. My apologies for the delayed response. We are experiencing higher than normal twitter volume.  *HJH",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 8661."
+  },
+  {
+    "id": "GOLD_121",
+    "customer_text": "Missing my entire Halloween with kids because @Delta can't find a flight attendant for my flight home. #bestlaidplans #anotherdisappointment",
+    "ground_truth_intent": "complaint_staff_service",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@117523 Hi, Eric. I understand &amp; my apologies for the delayed flight. Our teams are working to get you safely on your way asap.  *HJH",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 8664."
+  },
+  {
+    "id": "GOLD_122",
+    "customer_text": "@Delta can 2 people travelling on the same booking pool their luggage allowance?",
+    "ground_truth_intent": "baggage_issue",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@117524 Hi Sammy. Unfortunately, no. Each passenger has their own individual baggage allowance. *AJC",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 8668."
+  },
+  {
+    "id": "GOLD_123",
+    "customer_text": "@Delta, not the #A350FirstFlyers , but dinner and service on flight 820 tonight is pretty darn good! https://t.co/yWdxK5YHOM",
+    "ground_truth_intent": "complaint_staff_service",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@117667 Enjoy! *HVI",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 9341."
+  },
+  {
+    "id": "GOLD_124",
+    "customer_text": "Thanks to @Delta going above &amp;beyond I was able to change my flight to go directly to Florida &amp; have the chance to say goodbye to my grandpa",
+    "ground_truth_intent": "general_greeting_gratitude",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@117668 Thank for the shout-out Alena.  Glad we were able to help.  *TLT",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 9343."
+  },
+  {
+    "id": "GOLD_125",
+    "customer_text": "Thank you @Delta for getting us on the next flight out of LGA with only minutes to spare at the gate. We will make our connection :)",
+    "ground_truth_intent": "flight_disruption",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@117669 That's great, Jamie! I'm happy to hear you will make your flt. :-) *AAB",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 9350."
+  },
+  {
+    "id": "GOLD_126",
+    "customer_text": "@Delta has the worst customer service I have ever experienced. Spent two hours on the phone due to ignorant operators &amp; nothing was resolved",
+    "ground_truth_intent": "complaint_staff_service",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@117817 2/2 https://t.co/6iDGBJAc2m",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 9866."
+  },
+  {
+    "id": "GOLD_127",
+    "customer_text": "@Delta has the worst customer service I have ever experienced. Spent two hours on the phone due to ignorant operators &amp; nothing was resolved",
+    "ground_truth_intent": "complaint_staff_service",
+    "true_escalation": true,
+    "escalation_reason": "Specific reservation lookup or active flight intervention requires human agent access to internal Delta tools.",
+    "difficulty_tier": "medium",
+    "tags": [
+      "account_lookup",
+      "human_agent"
+    ],
+    "reference_reply": "@117817 Hello! I am here to help. Could you provide your confirmation number via DM so I can take a look for you? Thanks. *TDL... 1/2",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 9868."
+  },
+  {
+    "id": "GOLD_128",
+    "customer_text": "@delta. Do you think it will actually leave at 9:55?  The people at the gate are not sure",
+    "ground_truth_intent": "flight_disruption",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@117818 I think they both will.  *TBT",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 9869."
+  },
+  {
+    "id": "GOLD_129",
+    "customer_text": "Oh @Delta - I’ve missed you so I thought I would fly on the busiest day of the year 😳 #travel https://t.co/sVfMyNB3Ye",
+    "ground_truth_intent": "flight_disruption",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@117926 We appreciate your flying Delta. Have a Great day! *AMR",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 10578."
+  },
+  {
+    "id": "GOLD_130",
+    "customer_text": "Thanks, @Delta , 4 embracing @117977 ! https://t.co/YfyR7UywZ5",
+    "ground_truth_intent": "general_greeting_gratitude",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@117976 @117977 😊  *TDL",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 10715."
+  },
+  {
+    "id": "GOLD_131",
+    "customer_text": "Nothing like a delay to Boston on @Delta because someone didn’t get the right paperwork done out of maintenance. Hopefully we leave soon!",
+    "ground_truth_intent": "flight_disruption",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@118263 Oh no! My apologies for that delay. What flight number number you speaking of and I will be glad to take a look? *HRO",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 11704."
+  },
+  {
+    "id": "GOLD_132",
+    "customer_text": "yet ANOTHER flight delay, and now I won't be getting home until midnight. I want 7 hours of my life back, @Delta.",
+    "ground_truth_intent": "flight_disruption",
+    "true_escalation": true,
+    "escalation_reason": "Specific reservation lookup or active flight intervention requires human agent access to internal Delta tools.",
+    "difficulty_tier": "medium",
+    "tags": [
+      "account_lookup",
+      "human_agent"
+    ],
+    "reference_reply": "@118264 So sorry to hear about the delay. Please DM your confirmation # so that we can look into this. *AJC",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 11708."
+  },
+  {
+    "id": "GOLD_133",
+    "customer_text": "@Delta pay for baggage to go in the hold and no bags arrive because the plane hold is “too small” what a absolute joke!! #delta #airlines",
+    "ground_truth_intent": "baggage_issue",
+    "true_escalation": true,
+    "escalation_reason": "Specific reservation lookup or active flight intervention requires human agent access to internal Delta tools.",
+    "difficulty_tier": "medium",
+    "tags": [
+      "account_lookup",
+      "human_agent"
+    ],
+    "reference_reply": "@118377 Oh no. Sorry to hear that. Please DM your baggage file reference number so that we can look into this. *AJC",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 12056."
+  },
+  {
+    "id": "GOLD_134",
+    "customer_text": "A free first class upgrade on my PHX to SLC flight? That's just what I wanted for an early birthday present. Thanks, @Delta! 😊 🛫 #silver",
+    "ground_truth_intent": "booking_reservation",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@118378 Cheers to another wonderful year for you! 🍷Happy Birthday, Christopher! Enjoy the upgrade! 😊🎁🎇💺 *TJN",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 12058."
+  },
+  {
+    "id": "GOLD_135",
+    "customer_text": "@Delta earns our gratitude and respect. Thank you, Apiola, for representing your company well.",
+    "ground_truth_intent": "general_greeting_gratitude",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@118379 Thanks for the shout-out!. We appreciate you!   *TLT",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 12060."
+  },
+  {
+    "id": "GOLD_136",
+    "customer_text": "Had to make a pit stop for quick plane fix but they fed us pizza while we waited 🍕🍕Thanks @Delta! #ineedmorewinethough 😂😂",
+    "ground_truth_intent": "general_greeting_gratitude",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@118380 Hello, Nicole. Glad we exceeded your expectations today. *AFM",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 12062."
+  },
+  {
+    "id": "GOLD_137",
+    "customer_text": "@Delta your airline and ticketing process is a nightmare. Why would you assign me two seats separate from one another, when I ordered both tickets at the same time, on the same account, in the same order? How does that make sense? You're a greedy unethical company.",
+    "ground_truth_intent": "booking_reservation",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@118381 We sincerely apologize for your disappointment. We always strive to create a positive customer experience.  *AJC",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 12064."
+  },
+  {
+    "id": "GOLD_138",
+    "customer_text": "@Delta your airline and ticketing process is a nightmare. Why would you assign me two seats separate from one another, when I ordered both tickets at the same time, on the same account, in the same order? How does that make sense? You're a greedy unethical company.",
+    "ground_truth_intent": "booking_reservation",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@118381 Seat assignments are subject to change. However, we do our best to honor seat requests. *AJC",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 12066."
+  },
+  {
+    "id": "GOLD_139",
+    "customer_text": ".@Delta  Cheers and thanks for the upgrade to Dublin!! Unexpected and appreciated!! #2millionsoon https://t.co/KoDdFKMmXp",
+    "ground_truth_intent": "booking_reservation",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@118382 Cheers to you John, for being a loyal Delta customer! 🍻😉 *TJN",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 12067."
+  },
+  {
+    "id": "GOLD_140",
+    "customer_text": "@Delta landed in PHL on flight 2097 this afternoon and just realized I left my Kindle in seat 3A.  How do I find/claim it?",
+    "ground_truth_intent": "baggage_issue",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@118732 To assist us, please complete our Lost Item Report here: https://t.co/PFXvMptCcO *HJH",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 13242."
+  },
+  {
+    "id": "GOLD_141",
+    "customer_text": "@Delta landed in PHL on flight 2097 this afternoon and just realized I left my Kindle in seat 3A.  How do I find/claim it?",
+    "ground_truth_intent": "baggage_issue",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@118732 Oh my, Julie. That is not good to hear. We will make every effort to locate the your Kindle asap.  *HJH",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 13244."
+  },
+  {
+    "id": "GOLD_142",
+    "customer_text": "@118734 @Delta :) thank you!",
+    "ground_truth_intent": "general_greeting_gratitude",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@118733 have a great week. 😊 *TBT",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 13246."
+  },
+  {
+    "id": "GOLD_143",
+    "customer_text": "@Delta Thank you!",
+    "ground_truth_intent": "general_greeting_gratitude",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@118735 You're welcome :) *TLT",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 13265."
+  },
+  {
+    "id": "GOLD_144",
+    "customer_text": "@Delta hi. I've just received a skymiles card from Amex. How can I check my skymiles account using the number on the card?",
+    "ground_truth_intent": "booking_reservation",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@118735 Hi Bruno, you can put this number online at https://t.co/lVlOjYwO0A and access your account. *AMS",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 13271."
+  },
+  {
+    "id": "GOLD_145",
+    "customer_text": "@Delta It was on a flight from ATL to NXA arrived at 3:55 local. FYI. Go thank them. I will when I get there",
+    "ground_truth_intent": "general_greeting_gratitude",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@118844 Have a great week. 😊 *TBT",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 13611."
+  },
+  {
+    "id": "GOLD_146",
+    "customer_text": "@Delta big thanks to your employee finding my left on plane @118845 headphones &amp; holding until my return #greatcustomerservice",
+    "ground_truth_intent": "complaint_staff_service",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@118844 So great to hear that you were reunited with your headphones! *ALA",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 13613."
+  },
+  {
+    "id": "GOLD_147",
+    "customer_text": "@Delta an hour delay from Detroit to Phoenix because of a computer issue that was no closer to being resolved while we boarded is not cool",
+    "ground_truth_intent": "flight_disruption",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@118846 Oh no, I'm sorry Dan for any inconvenience. Our goal is to have safe and on time service. *TBT",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 13615."
+  },
+  {
+    "id": "GOLD_148",
+    "customer_text": "@Delta I understand. The delay was medical. We were patient. No ones fault. Just feel bad that you guys are having to hotel us for the night. :/",
+    "ground_truth_intent": "flight_disruption",
+    "true_escalation": true,
+    "escalation_reason": "High customer distress / severe operational disruption requiring empathetic human agent intervention.",
+    "difficulty_tier": "hard",
+    "tags": [
+      "high_distress",
+      "escalation"
+    ],
+    "reference_reply": "@118949 Make the best of things, Kelly. Enjoy your extra night! *ABN",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 13991."
+  },
+  {
+    "id": "GOLD_149",
+    "customer_text": "@Delta Currently waiting on Delta Baggage Claim floor in Atl waiting for our bags to be brought up. Has been an hour. Can you help us get them? 😬❤️",
+    "ground_truth_intent": "baggage_issue",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@118949 Please reach out to someone from our baggage service team for info on your baggage. *ABN",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 13994."
+  },
+  {
+    "id": "GOLD_150",
+    "customer_text": "Missed our @Delta connection in ATL to SEA due to delay. Ran to the gate &amp; watched the attendant shut it on us. They wouldn't let us on. 😭",
+    "ground_truth_intent": "flight_disruption",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@118949 ...the doors are closed, they can't be opened. *ABN 2/2",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 13999."
+  },
+  {
+    "id": "GOLD_151",
+    "customer_text": "@Delta is it possible that my upgrade coupons have disappeared from my online profile? It says I have none, but  I should have a ton",
+    "ground_truth_intent": "booking_reservation",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@118950 Hello, Benjamin. What type of upgrade certificates are you referring to? *HDG",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 14002."
+  },
+  {
+    "id": "GOLD_152",
+    "customer_text": "@Delta Ohh, so I missed them by a few weeks? Anything I can do to get an exception or so? “Pretty please” just for the global ones",
+    "ground_truth_intent": "flight_disruption",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@118950 I'm sorry we are unable to make any exceptions regarding the upgrade certificates.  *HDG",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 14008."
+  },
+  {
+    "id": "GOLD_153",
+    "customer_text": "@116450 would rather leave 9 (NINE!) 1st class seats empty than upgrade me. I've spent $15K+ with them this year! 125K miles... @Delta, sup?",
+    "ground_truth_intent": "booking_reservation",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@119073 ...https://t.co/rWTylnXK8P.  *HDG 2/2",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 14391."
+  },
+  {
+    "id": "GOLD_154",
+    "customer_text": "Hey @Delta, how is it possible that you accidentally cancel a return trip? I would have been stuck in the airport if I didn't notice.",
+    "ground_truth_intent": "flight_disruption",
+    "true_escalation": true,
+    "escalation_reason": "Specific reservation lookup or active flight intervention requires human agent access to internal Delta tools.",
+    "difficulty_tier": "medium",
+    "tags": [
+      "account_lookup",
+      "human_agent"
+    ],
+    "reference_reply": "@119074 It sounds like we need to look into this, John. DM us your confirmation here.  *ALA https://t.co/6iDGBJAc2m",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 14394."
+  },
+  {
+    "id": "GOLD_155",
+    "customer_text": "@delta. Does Delta offer trip insurance and if so, what does it cover?  Thanks!",
+    "ground_truth_intent": "general_greeting_gratitude",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@119075 Thank you for asking. Check this link https://t.co/4RLWk2SmAX *TDL",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 14396."
+  },
+  {
+    "id": "GOLD_156",
+    "customer_text": "thanks so much Dolton @Delta, means so much!!!!! #extremelifesaver",
+    "ground_truth_intent": "general_greeting_gratitude",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@119077 You're very welcome, Hal! *ABN",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 14403."
+  },
+  {
+    "id": "GOLD_157",
+    "customer_text": "@Delta can I bring my GoPro Karma drone as a carry on if it's in its case?",
+    "ground_truth_intent": "baggage_rules_faq",
+    "true_escalation": true,
+    "escalation_reason": "Specific reservation lookup or active flight intervention requires human agent access to internal Delta tools.",
+    "difficulty_tier": "medium",
+    "tags": [
+      "account_lookup",
+      "human_agent"
+    ],
+    "reference_reply": "@119237 Hello Grace, please follow via DM for assistance. *TDL https://t.co/6iDGBJAc2m",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 14932."
+  },
+  {
+    "id": "GOLD_158",
+    "customer_text": "I’m missing my bag. Tag 8006080773 on DL0140 MSP to CDG and DL8461/AF0192 to BLR, but was rebooked on EK072. What to do? @delta",
+    "ground_truth_intent": "flight_disruption",
+    "true_escalation": true,
+    "escalation_reason": "Customer tweet contains private reservation details/PNR; must be routed to DM for secure human resolution.",
+    "difficulty_tier": "hard",
+    "tags": [
+      "pii_detected",
+      "dm_required"
+    ],
+    "reference_reply": "@119238 Oh no, please file a lost baggage claim with EK, they will start the search for you. *TBT",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 14934."
+  },
+  {
+    "id": "GOLD_159",
+    "customer_text": "@Delta EK callled an hour ago and did not have any information of the whereabouts of my bag, but still searching hopefully",
+    "ground_truth_intent": "baggage_issue",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@119238 I'm sure it will. I'm sorry for the inconvenience.  *TBT",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 14939."
+  },
+  {
+    "id": "GOLD_160",
+    "customer_text": "@DELTA huge thanks to Marcus and the other gate agents at LAX terminal 2 for incredible customer service tonight. well done.",
+    "ground_truth_intent": "flight_disruption",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@119381 We appreciate your feedback, JD! *ALA",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 15374."
+  },
+  {
+    "id": "GOLD_161",
+    "customer_text": "@Delta I walked out of custom area without picking up my checked in bag in Montreal. Not sure how to call Delta and file a claim.",
+    "ground_truth_intent": "baggage_issue",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@119464 Oh my, Varanthan. Please reach out to our Baggage team at 800-325-8224 for assistance.  *HDG",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 15731."
+  },
+  {
+    "id": "GOLD_162",
+    "customer_text": "I seriously love flying @delta! Couldn’t get a pre-assigned seat so I called an explained my flight anxiety and they upgraded me for free!",
+    "ground_truth_intent": "booking_reservation",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@119465 So  happy that we could help make your trip comfortable, Stephanie!  *HDG",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 15736."
+  },
+  {
+    "id": "GOLD_163",
+    "customer_text": "@Delta Always providing great customer experience no matter the circumstance! Thank you as always! #Delta #airlines",
+    "ground_truth_intent": "general_greeting_gratitude",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@119466 Thank you for being such a loyal customer!  *HDG",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 15738."
+  },
+  {
+    "id": "GOLD_164",
+    "customer_text": "@Delta The flight attendant said “not my problem”... so no. I would have corrected it with the gate agent if I had realized b",
+    "ground_truth_intent": "flight_disruption",
+    "true_escalation": true,
+    "escalation_reason": "Specific reservation lookup or active flight intervention requires human agent access to internal Delta tools.",
+    "difficulty_tier": "medium",
+    "tags": [
+      "account_lookup",
+      "human_agent"
+    ],
+    "reference_reply": "@119467 That's not good. Please DM your confirmation number so I can look into this.  *HDG",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 15740."
+  },
+  {
+    "id": "GOLD_165",
+    "customer_text": "When YOU PAY for a #comfortselect seat 2 LHR but realize once on the flt u DID NOT get that seat?😡 #deltafail &amp; Nothing can be done @Delta https://t.co/98tLthaFV3",
+    "ground_truth_intent": "booking_reservation",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@119467 Oh no, Megan! I'm so sorry we were unable to correct this before departure. Has a refund been requested for you?  *HDG",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 15743."
+  },
+  {
+    "id": "GOLD_166",
+    "customer_text": "I really enjoyed my trip from Europe to Brazil in D1 &amp; first with @Delta so I have booked another",
+    "ground_truth_intent": "booking_reservation",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@119555 That is great to hear, Gary. We are looking forward to having you on board! *ALA",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 16181."
+  },
+  {
+    "id": "GOLD_167",
+    "customer_text": "@Delta Doing fine! Pilots did a great job. Scary ride but I'd definitely take that flight crew again in a heartbeat.",
+    "ground_truth_intent": "general_greeting_gratitude",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@119556 Sorry about the bumpy ride but I'm happy to hear you are doing well and our crew was great through it all! 😊 *HDG",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 16186."
+  },
+  {
+    "id": "GOLD_168",
+    "customer_text": "@Delta As a longterm cust and Skymiles mem not happy re: my $1000 voucher being denied due to being 48 hours past expiration. #PleaseHelp",
+    "ground_truth_intent": "booking_reservation",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@119643 Hi, Chris. I understand &amp; my apologies for any confusion. However the voucher, is only good for 1 year &amp; cannot be extended. *HJH",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 16525."
+  },
+  {
+    "id": "GOLD_169",
+    "customer_text": "Thanks for the damaged suitcase!!! @Delta 😠😠 https://t.co/3I5VsGXLcl",
+    "ground_truth_intent": "baggage_issue",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@119644 Oh no, I'm very sorry to hear about this. Please speak with our airport Baggage Service team for immediate assistance.  *HRS",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 16528."
+  },
+  {
+    "id": "GOLD_170",
+    "customer_text": "@Delta Ah fair enough, didn’t realise that they were flexible like that. Thought it was just another fixed measure, thanks for the reply :)",
+    "ground_truth_intent": "general_greeting_gratitude",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@117975 Our pleasure. Thanks for reaching out! *ALY",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 16938."
+  },
+  {
+    "id": "GOLD_171",
+    "customer_text": "And I love flying @Delta my hometown airline! https://t.co/vn22u4Tm4c",
+    "ground_truth_intent": "general_greeting_gratitude",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@120047 It's always a pleasure to have you with us! 😉 *HDG",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 18446."
+  },
+  {
+    "id": "GOLD_172",
+    "customer_text": "@DELTA Can I check a bag that weighs 72 lbs? I'm fine with any fees, just want to check on the process, if any. Thx",
+    "ground_truth_intent": "baggage_issue",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@120103 Are you traveling within the US?  *HDG",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 18452."
+  },
+  {
+    "id": "GOLD_173",
+    "customer_text": "@DELTA Can I check a bag that weighs 72 lbs? I'm fine with any fees, just want to check on the process, if any. Thx",
+    "ground_truth_intent": "baggage_issue",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@120103 Brian, I am double checking on this for you right now.  *HDG",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 18454."
+  },
+  {
+    "id": "GOLD_174",
+    "customer_text": "@Delta Thank you :)",
+    "ground_truth_intent": "general_greeting_gratitude",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@120272 Anytime! *ALA",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 19235."
+  },
+  {
+    "id": "GOLD_175",
+    "customer_text": "I need a nap.... why @Delta did you delay my flight... then change my flight... I got to the airport at 4 and my flights not till 11 now😭😭😭",
+    "ground_truth_intent": "flight_disruption",
+    "true_escalation": true,
+    "escalation_reason": "Specific reservation lookup or active flight intervention requires human agent access to internal Delta tools.",
+    "difficulty_tier": "medium",
+    "tags": [
+      "account_lookup",
+      "human_agent"
+    ],
+    "reference_reply": "@120288 Oh no! So sorry for any inconvenience this has caused. It could have been changed to keep you from misconnecting if you have a connecting flight, but I'd be happy to take a look at it if you provide your confirmation in a DM.  *TJE https://t.co/6iDGBJAc2m",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 19300."
+  },
+  {
+    "id": "GOLD_176",
+    "customer_text": "@Delta Thank you!",
+    "ground_truth_intent": "general_greeting_gratitude",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@120341 Please contact our On-Line Support Team at 888-750-3284 for assistance with the app. *ABN",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 19783."
+  },
+  {
+    "id": "GOLD_177",
+    "customer_text": "Thank you @Delta for helping me make my flight. I was late and you were great! #bestairlineever",
+    "ground_truth_intent": "general_greeting_gratitude",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@120484 So happy that we were able to help with this! Happy travels.  *HDG",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 20538."
+  },
+  {
+    "id": "GOLD_178",
+    "customer_text": "Good Morning Team @Delta!! You all rock! #WorldsGreatestAirline",
+    "ground_truth_intent": "general_greeting_gratitude",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@120858 Good morning to you too! 😊 *HDG",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 22233."
+  },
+  {
+    "id": "GOLD_179",
+    "customer_text": "@Delta Thank you!",
+    "ground_truth_intent": "general_greeting_gratitude",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@121305 You are welcome.  *HDG",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 24600."
+  },
+  {
+    "id": "GOLD_180",
+    "customer_text": "@Delta you know what irritating? When your flight is delayed and likely to miss connector bc flight attendants can't get out of bed. DL3424",
+    "ground_truth_intent": "flight_disruption",
+    "true_escalation": true,
+    "escalation_reason": "Customer tweet contains private reservation details/PNR; must be routed to DM for secure human resolution.",
+    "difficulty_tier": "hard",
+    "tags": [
+      "pii_detected",
+      "dm_required"
+    ],
+    "reference_reply": "@121674 I'm sorry for the inconveniences.  *AMR",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 26001."
+  },
+  {
+    "id": "GOLD_181",
+    "customer_text": "@Delta Great news...they finally woke up and laughing all the way from security to the gate.  Great job today Delta.",
+    "ground_truth_intent": "flight_disruption",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@121674 Looking at the Flight Record, the flight should still arrive in ATL, close to the original scheduled arrival time.  *AMR",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 26995."
+  },
+  {
+    "id": "GOLD_182",
+    "customer_text": "@Delta Great news...they finally woke up and laughing all the way from security to the gate.  Great job today Delta.",
+    "ground_truth_intent": "flight_disruption",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@121674 I will share your comments with our TRI team. I wish you a wonderful day.  *AMR",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 26999."
+  },
+  {
+    "id": "GOLD_183",
+    "customer_text": "I appreciate how efficient terminal 4 is @122122. Thank you @Delta !",
+    "ground_truth_intent": "general_greeting_gratitude",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@122121 Have a wonderful day! *AMR",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 27948."
+  },
+  {
+    "id": "GOLD_184",
+    "customer_text": "I appreciate how efficient terminal 4 is @122122. Thank you @Delta !",
+    "ground_truth_intent": "general_greeting_gratitude",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@122121 Awesome! Thank you.  *AMR",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 27950."
+  },
+  {
+    "id": "GOLD_185",
+    "customer_text": ".@824 many thanks to Deborah Benjamin, @Delta gate agent at EWR, who came to our aid last night.  #DeltaAngel",
+    "ground_truth_intent": "flight_disruption",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@122242 @824 Good Morning, Mark! 😉 *HCK",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 28520."
+  },
+  {
+    "id": "GOLD_186",
+    "customer_text": "Good morning @Delta ❤️ STL-LGA for the next few days. playing the smiling game as people board. About 90% for making people smile.",
+    "ground_truth_intent": "general_greeting_gratitude",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@122243 Enjoy your flight! 😊 *HCK",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 28522."
+  },
+  {
+    "id": "GOLD_187",
+    "customer_text": "Good morning @Delta ❤️ STL-LGA for the next few days. playing the smiling game as people board. About 90% for making people smile.",
+    "ground_truth_intent": "general_greeting_gratitude",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@122243 We welcome you aboard! Please let us know if we can assist you in any way.  *HCK",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 28524."
+  },
+  {
+    "id": "GOLD_188",
+    "customer_text": "I need assistance in getting on standby for later flight. Major delays in Paris and will miss connection in ATL. @Delta",
+    "ground_truth_intent": "flight_disruption",
+    "true_escalation": true,
+    "escalation_reason": "Specific reservation lookup or active flight intervention requires human agent access to internal Delta tools.",
+    "difficulty_tier": "medium",
+    "tags": [
+      "account_lookup",
+      "human_agent"
+    ],
+    "reference_reply": "@122244 Hi Donald. Please DM your ticket number. I will take a look.  *AMR",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 28526."
+  },
+  {
+    "id": "GOLD_189",
+    "customer_text": "Good morning @Delta ❤️ STL-LGA for the next few days. playing the smiling game as people board. About 90% for making people smile.",
+    "ground_truth_intent": "general_greeting_gratitude",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@122243 Good Morning, Danielle! 😊 *HCK",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 28525."
+  },
+  {
+    "id": "GOLD_190",
+    "customer_text": "Overbooked situation on @Delta to ORD. 10 Volunteers getting offered Delta $$.\nStared at 800. We’re now at 1200.\nSounds like an auction.",
+    "ground_truth_intent": "booking_reservation",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@122245 WOW. Thanks for letting us know.  *AMR",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 28529."
+  },
+  {
+    "id": "GOLD_191",
+    "customer_text": "A little breaky and coffee before take off #Travel right (at @Delta Sky Club in East Elmhurst, NY) https://t.co/VcBkGKVDHY",
+    "ground_truth_intent": "baggage_rules_faq",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@122387 Awesome! Enjoy your travels, *ALY",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 29023."
+  },
+  {
+    "id": "GOLD_192",
+    "customer_text": "I'm at @Delta Sky Club in Minneapolis, MN https://t.co/JCujNF3f39",
+    "ground_truth_intent": "inflight_airport_service",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@122499 Keep climbing Eric! *ALS",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 29589."
+  },
+  {
+    "id": "GOLD_193",
+    "customer_text": "@Delta thanks for your terrible connections. Missing an important business meeting due to poor planning on your part #Delta",
+    "ground_truth_intent": "flight_disruption",
+    "true_escalation": true,
+    "escalation_reason": "Specific reservation lookup or active flight intervention requires human agent access to internal Delta tools.",
+    "difficulty_tier": "medium",
+    "tags": [
+      "account_lookup",
+      "human_agent"
+    ],
+    "reference_reply": "@122500 Hello, I am so sorry about your flights. Can you please DM your confirmation number so I can assist? Thank you. *TJM",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 29591."
+  },
+  {
+    "id": "GOLD_194",
+    "customer_text": "@Delta accommodate....also disappointing that you allow connections to be so tight...",
+    "ground_truth_intent": "flight_disruption",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@122500 ...us know. *TJM 2/2",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 29595."
+  },
+  {
+    "id": "GOLD_195",
+    "customer_text": "@Delta Can you please email me confirmation of my cancellation and refund info?",
+    "ground_truth_intent": "flight_disruption",
+    "true_escalation": true,
+    "escalation_reason": "Customer tweet contains private reservation details/PNR; must be routed to DM for secure human resolution.",
+    "difficulty_tier": "hard",
+    "tags": [
+      "pii_detected",
+      "dm_required"
+    ],
+    "reference_reply": "@122500 Hello. Follow/DM your confirm # and or ticket # concerning this travel.  *ARD",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 29598."
+  },
+  {
+    "id": "GOLD_196",
+    "customer_text": "@Delta accommodate....also disappointing that you allow connections to be so tight...",
+    "ground_truth_intent": "flight_disruption",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@122500 We let you down and I am deeply sorry for that. We regret any frustration we have caused. If there is anything we can do please let... 1/2",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 29596."
+  },
+  {
+    "id": "GOLD_197",
+    "customer_text": "@Delta booking agent's mistake and despite the highest status, i don't even show up on the upgrade list.",
+    "ground_truth_intent": "booking_reservation",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@122622 I'm showing you are on the list for an upgrade. *ALS",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 30094."
+  },
+  {
+    "id": "GOLD_198",
+    "customer_text": "@Delta booking agent's mistake and despite the highest status, i don't even show up on the upgrade list.",
+    "ground_truth_intent": "booking_reservation",
+    "true_escalation": true,
+    "escalation_reason": "Specific reservation lookup or active flight intervention requires human agent access to internal Delta tools.",
+    "difficulty_tier": "medium",
+    "tags": [
+      "account_lookup",
+      "human_agent"
+    ],
+    "reference_reply": "@122622 May I have your confirmation number? Please DM for privacy. *ALS",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 30096."
+  },
+  {
+    "id": "GOLD_199",
+    "customer_text": "@Delta booking agent's mistake and despite the highest status, i don't even show up on the upgrade list.",
+    "ground_truth_intent": "booking_reservation",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@122622 Are you requesting a Medallion Upgrade? *ALS",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 30097."
+  },
+  {
+    "id": "GOLD_200",
+    "customer_text": "@Delta Class warfare at its best folks.",
+    "ground_truth_intent": "booking_reservation",
+    "true_escalation": false,
+    "escalation_reason": "Routine informational or policy inquiry capable of autonomous resolution.",
+    "difficulty_tier": "easy",
+    "tags": [
+      "auto_handle",
+      "faq"
+    ],
+    "reference_reply": "@122624 I will share you comments with our Airport Leadership. *AMR",
+    "annotation_notes": "Sampled from real Twitter thread with Delta response id 30106."
+  }
+]

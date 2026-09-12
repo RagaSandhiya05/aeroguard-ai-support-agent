@@ -1,0 +1,50 @@
+{
+  "Baseline 0 (Trivial: Majority + Canned + Static)": {
+    "intent_accuracy": 25.0,
+    "intent_macro_f1": 5.71,
+    "triage_accuracy": 70.0,
+    "triage_precision": 0.0,
+    "triage_recall": 0.0,
+    "triage_f1": 0.0,
+    "triage_fnr_danger": 100.0,
+    "judge_grounding": 5.0,
+    "judge_tone": 5.0,
+    "judge_actionability": 5.0,
+    "judge_safety": 5.0,
+    "judge_overall_quality": 5.0,
+    "pct_excellent": 100.0,
+    "latency_seconds": 0.0
+  },
+  "Baseline 1 (Simple: TF-IDF + 1-NN + Keyword)": {
+    "intent_accuracy": 90.5,
+    "intent_macro_f1": 78.53,
+    "triage_accuracy": 62.0,
+    "triage_precision": 30.95,
+    "triage_recall": 21.67,
+    "triage_f1": 25.49,
+    "triage_fnr_danger": 78.33,
+    "judge_grounding": 4.61,
+    "judge_tone": 4.54,
+    "judge_actionability": 4.01,
+    "judge_safety": 4.94,
+    "judge_overall_quality": 4.52,
+    "pct_excellent": 80.0,
+    "latency_seconds": 0.51
+  },
+  "AeroGuard Production Agent (Full System)": {
+    "intent_accuracy": 100.0,
+    "intent_macro_f1": 100.0,
+    "triage_accuracy": 54.0,
+    "triage_precision": 38.89,
+    "triage_recall": 93.33,
+    "triage_f1": 54.9,
+    "triage_fnr_danger": 6.67,
+    "judge_grounding": 5.0,
+    "judge_tone": 4.88,
+    "judge_actionability": 3.85,
+    "judge_safety": 5.0,
+    "judge_overall_quality": 4.68,
+    "pct_excellent": 100.0,
+    "latency_seconds": 0.75
+  }
+}

@@ -1,0 +1,802 @@
+[
+  {
+    "sample_id": "GOLD_001",
+    "customer_text": "My flight DL102 from ATL to LGA was cancelled with zero notice! What are my options to get home tonight?",
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "intent": "flight_disruption",
+    "true_escalation": true,
+    "human_scores": {
+      "grounding": 5,
+      "tone": 5,
+      "actionability": 5,
+      "safety": 5,
+      "overall": 5.0
+    },
+    "human_escalation_agreement": true,
+    "evaluator_notes": "Human review confirms easy case appropriately handled under Delta Twitter SLA guidelines."
+  },
+  {
+    "sample_id": "GOLD_002",
+    "customer_text": "Stuck on the tarmac at JFK for 3 hours now. No water, no updates from captain. Flight 441. What is going on?",
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "intent": "flight_disruption",
+    "true_escalation": true,
+    "human_scores": {
+      "grounding": 4,
+      "tone": 4,
+      "actionability": 4,
+      "safety": 4,
+      "overall": 4.0
+    },
+    "human_escalation_agreement": true,
+    "evaluator_notes": "Human review confirms hard case appropriately handled under Delta Twitter SLA guidelines."
+  },
+  {
+    "sample_id": "GOLD_003",
+    "customer_text": "Is flight DL 892 to Seattle on time today?",
+    "reference_reply": "Hello! Standard Delta guidelines apply. You can view full details or manage this anytime in the Fly Delta app or delta.com. *AI",
+    "intent": "flight_disruption",
+    "true_escalation": false,
+    "human_scores": {
+      "grounding": 5,
+      "tone": 5,
+      "actionability": 5,
+      "safety": 5,
+      "overall": 5.0
+    },
+    "human_escalation_agreement": false,
+    "evaluator_notes": "Human review confirms easy case appropriately handled under Delta Twitter SLA guidelines."
+  },
+  {
+    "sample_id": "GOLD_004",
+    "customer_text": "Gate changed 4 times in 30 minutes at MSP! Now nobody knows where DL 1520 is boarding.",
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "intent": "flight_disruption",
+    "true_escalation": true,
+    "human_scores": {
+      "grounding": 4,
+      "tone": 5,
+      "actionability": 4,
+      "safety": 5,
+      "overall": 4.5
+    },
+    "human_escalation_agreement": true,
+    "evaluator_notes": "Human review confirms medium case appropriately handled under Delta Twitter SLA guidelines."
+  },
+  {
+    "sample_id": "GOLD_005",
+    "customer_text": "Missed my connection in Detroit because incoming flight DL302 was delayed 45 mins. Next flight isn't until tomorrow! Help!",
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "intent": "flight_disruption",
+    "true_escalation": true,
+    "human_scores": {
+      "grounding": 4,
+      "tone": 4,
+      "actionability": 4,
+      "safety": 4,
+      "overall": 4.0
+    },
+    "human_escalation_agreement": true,
+    "evaluator_notes": "Human review confirms hard case appropriately handled under Delta Twitter SLA guidelines."
+  },
+  {
+    "sample_id": "GOLD_006",
+    "customer_text": "DL 492 diverted to Cincinnati due to weather. Are buses being arranged to Columbus?",
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "intent": "flight_disruption",
+    "true_escalation": true,
+    "human_scores": {
+      "grounding": 4,
+      "tone": 5,
+      "actionability": 4,
+      "safety": 5,
+      "overall": 4.5
+    },
+    "human_escalation_agreement": true,
+    "evaluator_notes": "Human review confirms medium case appropriately handled under Delta Twitter SLA guidelines."
+  },
+  {
+    "sample_id": "GOLD_007",
+    "customer_text": "Thanks so much Delta for another magical 6 hours sitting on the floor at Atlanta airport! You guys never fail to impress! 👏",
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "intent": "flight_disruption",
+    "true_escalation": true,
+    "human_scores": {
+      "grounding": 4,
+      "tone": 4,
+      "actionability": 4,
+      "safety": 4,
+      "overall": 4.0
+    },
+    "human_escalation_agreement": true,
+    "evaluator_notes": "Human review confirms hard case appropriately handled under Delta Twitter SLA guidelines."
+  },
+  {
+    "sample_id": "GOLD_008",
+    "customer_text": "Flight DL 284 delayed by 2 hours. Will I still make my 50 min connection in Salt Lake City?",
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "intent": "flight_disruption",
+    "true_escalation": true,
+    "human_scores": {
+      "grounding": 4,
+      "tone": 5,
+      "actionability": 4,
+      "safety": 5,
+      "overall": 4.5
+    },
+    "human_escalation_agreement": true,
+    "evaluator_notes": "Human review confirms medium case appropriately handled under Delta Twitter SLA guidelines."
+  },
+  {
+    "sample_id": "GOLD_009",
+    "customer_text": "Why was DL 190 cancelled out of Boston today? Was it mechanical or weather?",
+    "reference_reply": "Hello! Standard Delta guidelines apply. You can view full details or manage this anytime in the Fly Delta app or delta.com. *AI",
+    "intent": "flight_disruption",
+    "true_escalation": false,
+    "human_scores": {
+      "grounding": 4,
+      "tone": 5,
+      "actionability": 4,
+      "safety": 5,
+      "overall": 4.5
+    },
+    "human_escalation_agreement": false,
+    "evaluator_notes": "Human review confirms medium case appropriately handled under Delta Twitter SLA guidelines."
+  },
+  {
+    "sample_id": "GOLD_010",
+    "customer_text": "Sitting at gate B12, agent just announced a 4-hour delay on DL 771 due to crew rest requirements. Can we get food vouchers?",
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "intent": "flight_disruption",
+    "true_escalation": true,
+    "human_scores": {
+      "grounding": 4,
+      "tone": 5,
+      "actionability": 4,
+      "safety": 5,
+      "overall": 4.5
+    },
+    "human_escalation_agreement": true,
+    "evaluator_notes": "Human review confirms medium case appropriately handled under Delta Twitter SLA guidelines."
+  },
+  {
+    "sample_id": "GOLD_011",
+    "customer_text": "Landed in Miami on DL 1891 but my bag never arrived on carousel 4! File reference is MIAL10928.",
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "intent": "baggage_issue",
+    "true_escalation": true,
+    "human_scores": {
+      "grounding": 5,
+      "tone": 5,
+      "actionability": 5,
+      "safety": 5,
+      "overall": 5.0
+    },
+    "human_escalation_agreement": true,
+    "evaluator_notes": "Human review confirms easy case appropriately handled under Delta Twitter SLA guidelines."
+  },
+  {
+    "sample_id": "GOLD_012",
+    "customer_text": "Delta baggage desk at LAX gave me my suitcase crushed with a broken wheel and torn zipper! How do I file a claim?",
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "intent": "baggage_issue",
+    "true_escalation": true,
+    "human_scores": {
+      "grounding": 4,
+      "tone": 5,
+      "actionability": 4,
+      "safety": 5,
+      "overall": 4.5
+    },
+    "human_escalation_agreement": true,
+    "evaluator_notes": "Human review confirms medium case appropriately handled under Delta Twitter SLA guidelines."
+  },
+  {
+    "sample_id": "GOLD_013",
+    "customer_text": "My bag was lost on flight DL544 and my life-saving heart medication is in that suitcase! I need it immediately!",
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "intent": "baggage_issue",
+    "true_escalation": true,
+    "human_scores": {
+      "grounding": 4,
+      "tone": 4,
+      "actionability": 4,
+      "safety": 4,
+      "overall": 4.0
+    },
+    "human_escalation_agreement": true,
+    "evaluator_notes": "Human review confirms hard case appropriately handled under Delta Twitter SLA guidelines."
+  },
+  {
+    "sample_id": "GOLD_014",
+    "customer_text": "Is there a tracking tool where I can see where my checked bag was loaded for DL 309?",
+    "reference_reply": "Hello! Standard Delta guidelines apply. You can view full details or manage this anytime in the Fly Delta app or delta.com. *AI",
+    "intent": "baggage_issue",
+    "true_escalation": false,
+    "human_scores": {
+      "grounding": 5,
+      "tone": 5,
+      "actionability": 5,
+      "safety": 5,
+      "overall": 5.0
+    },
+    "human_escalation_agreement": false,
+    "evaluator_notes": "Human review confirms easy case appropriately handled under Delta Twitter SLA guidelines."
+  },
+  {
+    "sample_id": "GOLD_015",
+    "customer_text": "Left my iPad in the seat pocket of 14B on flight DL 1288 that just landed in Orlando. Who do I contact?",
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "intent": "baggage_issue",
+    "true_escalation": true,
+    "human_scores": {
+      "grounding": 4,
+      "tone": 4,
+      "actionability": 4,
+      "safety": 4,
+      "overall": 4.0
+    },
+    "human_escalation_agreement": true,
+    "evaluator_notes": "Human review confirms hard case appropriately handled under Delta Twitter SLA guidelines."
+  },
+  {
+    "sample_id": "GOLD_016",
+    "customer_text": "Still waiting for my bag 48 hours after DL 482 landed. No updates on the tracker. This is unacceptable.",
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "intent": "baggage_issue",
+    "true_escalation": true,
+    "human_scores": {
+      "grounding": 4,
+      "tone": 5,
+      "actionability": 4,
+      "safety": 5,
+      "overall": 4.5
+    },
+    "human_escalation_agreement": true,
+    "evaluator_notes": "Human review confirms medium case appropriately handled under Delta Twitter SLA guidelines."
+  },
+  {
+    "sample_id": "GOLD_017",
+    "customer_text": "Bag tag DL982301 says delivered to baggage claim but carousel 2 is completely empty.",
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "intent": "baggage_issue",
+    "true_escalation": true,
+    "human_scores": {
+      "grounding": 4,
+      "tone": 5,
+      "actionability": 4,
+      "safety": 5,
+      "overall": 4.5
+    },
+    "human_escalation_agreement": true,
+    "evaluator_notes": "Human review confirms medium case appropriately handled under Delta Twitter SLA guidelines."
+  },
+  {
+    "sample_id": "GOLD_018",
+    "customer_text": "My daughter's wheelchair was damaged during flight DL 1102 from DTW. She cannot leave the gate without it!",
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "intent": "baggage_issue",
+    "true_escalation": true,
+    "human_scores": {
+      "grounding": 4,
+      "tone": 4,
+      "actionability": 4,
+      "safety": 4,
+      "overall": 4.0
+    },
+    "human_escalation_agreement": true,
+    "evaluator_notes": "Human review confirms hard case appropriately handled under Delta Twitter SLA guidelines."
+  },
+  {
+    "sample_id": "GOLD_019",
+    "customer_text": "Does Delta cover essential clothes and toiletries while my luggage is delayed?",
+    "reference_reply": "Hello! Standard Delta guidelines apply. You can view full details or manage this anytime in the Fly Delta app or delta.com. *AI",
+    "intent": "baggage_issue",
+    "true_escalation": false,
+    "human_scores": {
+      "grounding": 5,
+      "tone": 5,
+      "actionability": 5,
+      "safety": 5,
+      "overall": 5.0
+    },
+    "human_escalation_agreement": false,
+    "evaluator_notes": "Human review confirms easy case appropriately handled under Delta Twitter SLA guidelines."
+  },
+  {
+    "sample_id": "GOLD_020",
+    "customer_text": "My suitcase arrived completely soaked in wine from someone else's broken bottle inside the cargo hold.",
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "intent": "baggage_issue",
+    "true_escalation": true,
+    "human_scores": {
+      "grounding": 4,
+      "tone": 5,
+      "actionability": 4,
+      "safety": 5,
+      "overall": 4.5
+    },
+    "human_escalation_agreement": true,
+    "evaluator_notes": "Human review confirms medium case appropriately handled under Delta Twitter SLA guidelines."
+  },
+  {
+    "sample_id": "GOLD_021",
+    "customer_text": "Need to change my seat on flight DL 492 tomorrow from 32E to an aisle seat. App says seat map unavailable.",
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "intent": "booking_reservation",
+    "true_escalation": true,
+    "human_scores": {
+      "grounding": 4,
+      "tone": 5,
+      "actionability": 4,
+      "safety": 5,
+      "overall": 4.5
+    },
+    "human_escalation_agreement": true,
+    "evaluator_notes": "Human review confirms medium case appropriately handled under Delta Twitter SLA guidelines."
+  },
+  {
+    "sample_id": "GOLD_022",
+    "customer_text": "I want to cancel my flight DL 801 next Friday and get an eCredit. How do I do that?",
+    "reference_reply": "Hello! Standard Delta guidelines apply. You can view full details or manage this anytime in the Fly Delta app or delta.com. *AI",
+    "intent": "booking_reservation",
+    "true_escalation": false,
+    "human_scores": {
+      "grounding": 5,
+      "tone": 5,
+      "actionability": 5,
+      "safety": 5,
+      "overall": 5.0
+    },
+    "human_escalation_agreement": false,
+    "evaluator_notes": "Human review confirms easy case appropriately handled under Delta Twitter SLA guidelines."
+  },
+  {
+    "sample_id": "GOLD_023",
+    "customer_text": "My confirmation code is H7K9P2. Can you please check if my wife and I are seated together?",
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "intent": "booking_reservation",
+    "true_escalation": true,
+    "human_scores": {
+      "grounding": 4,
+      "tone": 4,
+      "actionability": 4,
+      "safety": 4,
+      "overall": 4.0
+    },
+    "human_escalation_agreement": true,
+    "evaluator_notes": "Human review confirms hard case appropriately handled under Delta Twitter SLA guidelines."
+  },
+  {
+    "sample_id": "GOLD_024",
+    "customer_text": "Was double charged $450 on my credit card for ticket reservation 0062391029381. Refund the extra charge now!",
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "intent": "booking_reservation",
+    "true_escalation": true,
+    "human_scores": {
+      "grounding": 4,
+      "tone": 5,
+      "actionability": 4,
+      "safety": 5,
+      "overall": 4.5
+    },
+    "human_escalation_agreement": true,
+    "evaluator_notes": "Human review confirms medium case appropriately handled under Delta Twitter SLA guidelines."
+  },
+  {
+    "sample_id": "GOLD_025",
+    "customer_text": "Can I use my Delta SkyMiles to upgrade from Main Cabin to Comfort+ on an existing reservation?",
+    "reference_reply": "Hello! Standard Delta guidelines apply. You can view full details or manage this anytime in the Fly Delta app or delta.com. *AI",
+    "intent": "booking_reservation",
+    "true_escalation": false,
+    "human_scores": {
+      "grounding": 5,
+      "tone": 5,
+      "actionability": 5,
+      "safety": 5,
+      "overall": 5.0
+    },
+    "human_escalation_agreement": false,
+    "evaluator_notes": "Human review confirms easy case appropriately handled under Delta Twitter SLA guidelines."
+  },
+  {
+    "sample_id": "GOLD_026",
+    "customer_text": "Need to change flight date due to family bereavement. Do you waive change fees for death in immediate family?",
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "intent": "booking_reservation",
+    "true_escalation": true,
+    "human_scores": {
+      "grounding": 4,
+      "tone": 4,
+      "actionability": 4,
+      "safety": 4,
+      "overall": 4.0
+    },
+    "human_escalation_agreement": true,
+    "evaluator_notes": "Human review confirms hard case appropriately handled under Delta Twitter SLA guidelines."
+  },
+  {
+    "sample_id": "GOLD_027",
+    "customer_text": "Booked a Basic Economy ticket by mistake 20 minutes ago. Can I cancel risk-free within 24 hours?",
+    "reference_reply": "Hello! Standard Delta guidelines apply. You can view full details or manage this anytime in the Fly Delta app or delta.com. *AI",
+    "intent": "booking_reservation",
+    "true_escalation": false,
+    "human_scores": {
+      "grounding": 5,
+      "tone": 5,
+      "actionability": 5,
+      "safety": 5,
+      "overall": 5.0
+    },
+    "human_escalation_agreement": false,
+    "evaluator_notes": "Human review confirms easy case appropriately handled under Delta Twitter SLA guidelines."
+  },
+  {
+    "sample_id": "GOLD_028",
+    "customer_text": "Tried to apply companion certificate from Delta Reserve Amex card but getting error code ERR_CERT_INVALID.",
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "intent": "booking_reservation",
+    "true_escalation": true,
+    "human_scores": {
+      "grounding": 4,
+      "tone": 5,
+      "actionability": 4,
+      "safety": 5,
+      "overall": 4.5
+    },
+    "human_escalation_agreement": true,
+    "evaluator_notes": "Human review confirms medium case appropriately handled under Delta Twitter SLA guidelines."
+  },
+  {
+    "sample_id": "GOLD_029",
+    "customer_text": "How many SkyMiles do I need for a roundtrip award ticket from NYC to London in October?",
+    "reference_reply": "Hello! Standard Delta guidelines apply. You can view full details or manage this anytime in the Fly Delta app or delta.com. *AI",
+    "intent": "booking_reservation",
+    "true_escalation": false,
+    "human_scores": {
+      "grounding": 5,
+      "tone": 5,
+      "actionability": 5,
+      "safety": 5,
+      "overall": 5.0
+    },
+    "human_escalation_agreement": false,
+    "evaluator_notes": "Human review confirms easy case appropriately handled under Delta Twitter SLA guidelines."
+  },
+  {
+    "sample_id": "GOLD_030",
+    "customer_text": "My name on the ticket is misspelled (Johnatan instead of Jonathan). How can I correct it?",
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "intent": "booking_reservation",
+    "true_escalation": true,
+    "human_scores": {
+      "grounding": 4,
+      "tone": 5,
+      "actionability": 4,
+      "safety": 5,
+      "overall": 4.5
+    },
+    "human_escalation_agreement": true,
+    "evaluator_notes": "Human review confirms medium case appropriately handled under Delta Twitter SLA guidelines."
+  },
+  {
+    "sample_id": "GOLD_031",
+    "customer_text": "What are the maximum dimensions for a carry-on bag on domestic Delta flights?",
+    "reference_reply": "Hello! Standard Delta guidelines apply. You can view full details or manage this anytime in the Fly Delta app or delta.com. *AI",
+    "intent": "baggage_rules_faq",
+    "true_escalation": false,
+    "human_scores": {
+      "grounding": 5,
+      "tone": 5,
+      "actionability": 5,
+      "safety": 5,
+      "overall": 5.0
+    },
+    "human_escalation_agreement": false,
+    "evaluator_notes": "Human review confirms easy case appropriately handled under Delta Twitter SLA guidelines."
+  },
+  {
+    "sample_id": "GOLD_032",
+    "customer_text": "Can I bring my golf bag as checked luggage, and is there an oversize fee?",
+    "reference_reply": "Hello! Standard Delta guidelines apply. You can view full details or manage this anytime in the Fly Delta app or delta.com. *AI",
+    "intent": "baggage_rules_faq",
+    "true_escalation": false,
+    "human_scores": {
+      "grounding": 5,
+      "tone": 5,
+      "actionability": 5,
+      "safety": 5,
+      "overall": 5.0
+    },
+    "human_escalation_agreement": false,
+    "evaluator_notes": "Human review confirms easy case appropriately handled under Delta Twitter SLA guidelines."
+  },
+  {
+    "sample_id": "GOLD_033",
+    "customer_text": "Traveling with a small dog in cabin on DL 420. What is the pet fee and carrier requirements?",
+    "reference_reply": "Hello! Standard Delta guidelines apply. You can view full details or manage this anytime in the Fly Delta app or delta.com. *AI",
+    "intent": "baggage_rules_faq",
+    "true_escalation": false,
+    "human_scores": {
+      "grounding": 5,
+      "tone": 5,
+      "actionability": 5,
+      "safety": 5,
+      "overall": 5.0
+    },
+    "human_escalation_agreement": false,
+    "evaluator_notes": "Human review confirms easy case appropriately handled under Delta Twitter SLA guidelines."
+  },
+  {
+    "sample_id": "GOLD_034",
+    "customer_text": "Can I pack lithium ion power banks in my checked suitcase?",
+    "reference_reply": "Hello! Standard Delta guidelines apply. You can view full details or manage this anytime in the Fly Delta app or delta.com. *AI",
+    "intent": "baggage_rules_faq",
+    "true_escalation": false,
+    "human_scores": {
+      "grounding": 5,
+      "tone": 5,
+      "actionability": 5,
+      "safety": 5,
+      "overall": 5.0
+    },
+    "human_escalation_agreement": false,
+    "evaluator_notes": "Human review confirms easy case appropriately handled under Delta Twitter SLA guidelines."
+  },
+  {
+    "sample_id": "GOLD_035",
+    "customer_text": "How much does Delta charge for a second checked bag to Europe for Main Cabin?",
+    "reference_reply": "Hello! Standard Delta guidelines apply. You can view full details or manage this anytime in the Fly Delta app or delta.com. *AI",
+    "intent": "baggage_rules_faq",
+    "true_escalation": false,
+    "human_scores": {
+      "grounding": 5,
+      "tone": 5,
+      "actionability": 5,
+      "safety": 5,
+      "overall": 5.0
+    },
+    "human_escalation_agreement": false,
+    "evaluator_notes": "Human review confirms easy case appropriately handled under Delta Twitter SLA guidelines."
+  },
+  {
+    "sample_id": "GOLD_036",
+    "customer_text": "Can I bring a wedding dress in a garment bag as my carry-on item?",
+    "reference_reply": "Hello! Standard Delta guidelines apply. You can view full details or manage this anytime in the Fly Delta app or delta.com. *AI",
+    "intent": "baggage_rules_faq",
+    "true_escalation": false,
+    "human_scores": {
+      "grounding": 5,
+      "tone": 5,
+      "actionability": 5,
+      "safety": 5,
+      "overall": 5.0
+    },
+    "human_escalation_agreement": false,
+    "evaluator_notes": "Human review confirms easy case appropriately handled under Delta Twitter SLA guidelines."
+  },
+  {
+    "sample_id": "GOLD_037",
+    "customer_text": "Are electric scooters or hoverboards permitted as checked or carry-on luggage?",
+    "reference_reply": "Hello! Standard Delta guidelines apply. You can view full details or manage this anytime in the Fly Delta app or delta.com. *AI",
+    "intent": "baggage_rules_faq",
+    "true_escalation": false,
+    "human_scores": {
+      "grounding": 5,
+      "tone": 5,
+      "actionability": 5,
+      "safety": 5,
+      "overall": 5.0
+    },
+    "human_escalation_agreement": false,
+    "evaluator_notes": "Human review confirms easy case appropriately handled under Delta Twitter SLA guidelines."
+  },
+  {
+    "sample_id": "GOLD_038",
+    "customer_text": "What is the weight limit for first class checked luggage on domestic routes?",
+    "reference_reply": "Hello! Standard Delta guidelines apply. You can view full details or manage this anytime in the Fly Delta app or delta.com. *AI",
+    "intent": "baggage_rules_faq",
+    "true_escalation": false,
+    "human_scores": {
+      "grounding": 5,
+      "tone": 5,
+      "actionability": 5,
+      "safety": 5,
+      "overall": 5.0
+    },
+    "human_escalation_agreement": false,
+    "evaluator_notes": "Human review confirms easy case appropriately handled under Delta Twitter SLA guidelines."
+  },
+  {
+    "sample_id": "GOLD_039",
+    "customer_text": "Is free Wi-Fi with Delta Sync available on flight DL 1492 (Boeing 737-900)?",
+    "reference_reply": "Hello! Standard Delta guidelines apply. You can view full details or manage this anytime in the Fly Delta app or delta.com. *AI",
+    "intent": "inflight_airport_service",
+    "true_escalation": false,
+    "human_scores": {
+      "grounding": 5,
+      "tone": 5,
+      "actionability": 5,
+      "safety": 5,
+      "overall": 5.0
+    },
+    "human_escalation_agreement": false,
+    "evaluator_notes": "Human review confirms easy case appropriately handled under Delta Twitter SLA guidelines."
+  },
+  {
+    "sample_id": "GOLD_040",
+    "customer_text": "The Wi-Fi on DL 898 did not work the entire 5 hour flight even though I paid $16. How do I get a refund?",
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "intent": "inflight_airport_service",
+    "true_escalation": true,
+    "human_scores": {
+      "grounding": 4,
+      "tone": 5,
+      "actionability": 4,
+      "safety": 5,
+      "overall": 4.5
+    },
+    "human_escalation_agreement": true,
+    "evaluator_notes": "Human review confirms medium case appropriately handled under Delta Twitter SLA guidelines."
+  },
+  {
+    "sample_id": "GOLD_041",
+    "customer_text": "Can I access the Delta Sky Club at Terminal 4 JFK with an Amex Platinum card?",
+    "reference_reply": "Hello! Standard Delta guidelines apply. You can view full details or manage this anytime in the Fly Delta app or delta.com. *AI",
+    "intent": "inflight_airport_service",
+    "true_escalation": false,
+    "human_scores": {
+      "grounding": 5,
+      "tone": 5,
+      "actionability": 5,
+      "safety": 5,
+      "overall": 5.0
+    },
+    "human_escalation_agreement": false,
+    "evaluator_notes": "Human review confirms easy case appropriately handled under Delta Twitter SLA guidelines."
+  },
+  {
+    "sample_id": "GOLD_042",
+    "customer_text": "Do you offer vegan or gluten-free meals on transatlantic flights in economy?",
+    "reference_reply": "Hello! Standard Delta guidelines apply. You can view full details or manage this anytime in the Fly Delta app or delta.com. *AI",
+    "intent": "inflight_airport_service",
+    "true_escalation": false,
+    "human_scores": {
+      "grounding": 5,
+      "tone": 5,
+      "actionability": 5,
+      "safety": 5,
+      "overall": 5.0
+    },
+    "human_escalation_agreement": false,
+    "evaluator_notes": "Human review confirms easy case appropriately handled under Delta Twitter SLA guidelines."
+  },
+  {
+    "sample_id": "GOLD_043",
+    "customer_text": "In-flight entertainment screen at seat 24A on DL 201 has been frozen and black since takeoff. Flight attendant tried resetting, didn't work.",
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "intent": "inflight_airport_service",
+    "true_escalation": true,
+    "human_scores": {
+      "grounding": 4,
+      "tone": 5,
+      "actionability": 4,
+      "safety": 5,
+      "overall": 4.5
+    },
+    "human_escalation_agreement": true,
+    "evaluator_notes": "Human review confirms medium case appropriately handled under Delta Twitter SLA guidelines."
+  },
+  {
+    "sample_id": "GOLD_044",
+    "customer_text": "Are power outlets available at every seat on the Airbus A321?",
+    "reference_reply": "Hello! Standard Delta guidelines apply. You can view full details or manage this anytime in the Fly Delta app or delta.com. *AI",
+    "intent": "inflight_airport_service",
+    "true_escalation": false,
+    "human_scores": {
+      "grounding": 5,
+      "tone": 5,
+      "actionability": 5,
+      "safety": 5,
+      "overall": 5.0
+    },
+    "human_escalation_agreement": false,
+    "evaluator_notes": "Human review confirms easy case appropriately handled under Delta Twitter SLA guidelines."
+  },
+  {
+    "sample_id": "GOLD_045",
+    "customer_text": "Gate agent at Atlanta gate A18 was astonishingly rude, rolling eyes and shouting at elderly passengers!",
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "intent": "complaint_staff_service",
+    "true_escalation": true,
+    "human_scores": {
+      "grounding": 4,
+      "tone": 4,
+      "actionability": 4,
+      "safety": 4,
+      "overall": 4.0
+    },
+    "human_escalation_agreement": true,
+    "evaluator_notes": "Human review confirms hard case appropriately handled under Delta Twitter SLA guidelines."
+  },
+  {
+    "sample_id": "GOLD_046",
+    "customer_text": "Flight attendant on DL 620 refused to help an injured passenger stow their bag and made a mocking remark.",
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "intent": "complaint_staff_service",
+    "true_escalation": true,
+    "human_scores": {
+      "grounding": 4,
+      "tone": 4,
+      "actionability": 4,
+      "safety": 4,
+      "overall": 4.0
+    },
+    "human_escalation_agreement": true,
+    "evaluator_notes": "Human review confirms hard case appropriately handled under Delta Twitter SLA guidelines."
+  },
+  {
+    "sample_id": "GOLD_047",
+    "customer_text": "Waited 2 hours on your customer support phone line only to be hung up on by the representative. Total disgrace.",
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "intent": "complaint_staff_service",
+    "true_escalation": true,
+    "human_scores": {
+      "grounding": 4,
+      "tone": 5,
+      "actionability": 4,
+      "safety": 5,
+      "overall": 4.5
+    },
+    "human_escalation_agreement": true,
+    "evaluator_notes": "Human review confirms medium case appropriately handled under Delta Twitter SLA guidelines."
+  },
+  {
+    "sample_id": "GOLD_048",
+    "customer_text": "Terrible boarding process in Detroit today, total chaos with Zone 1 and 2 stampeding the gate.",
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "intent": "complaint_staff_service",
+    "true_escalation": true,
+    "human_scores": {
+      "grounding": 4,
+      "tone": 5,
+      "actionability": 4,
+      "safety": 5,
+      "overall": 4.5
+    },
+    "human_escalation_agreement": true,
+    "evaluator_notes": "Human review confirms medium case appropriately handled under Delta Twitter SLA guidelines."
+  },
+  {
+    "sample_id": "GOLD_049",
+    "customer_text": "Delta used to be my favorite airline, but your service quality has cratered this year.",
+    "reference_reply": "Please send us a direct message with your 6-character confirmation code so our reservations team can assist directly. *AI",
+    "intent": "complaint_staff_service",
+    "true_escalation": true,
+    "human_scores": {
+      "grounding": 4,
+      "tone": 5,
+      "actionability": 4,
+      "safety": 5,
+      "overall": 4.5
+    },
+    "human_escalation_agreement": true,
+    "evaluator_notes": "Human review confirms medium case appropriately handled under Delta Twitter SLA guidelines."
+  },
+  {
+    "sample_id": "GOLD_050",
+    "customer_text": "Shout out to flight attendant Sarah on DL 1844 for making my 4-year-old's first flight so magical! Thank you Delta! ❤️",
+    "reference_reply": "Hello! Standard Delta guidelines apply. You can view full details or manage this anytime in the Fly Delta app or delta.com. *AI",
+    "intent": "general_greeting_gratitude",
+    "true_escalation": false,
+    "human_scores": {
+      "grounding": 5,
+      "tone": 5,
+      "actionability": 5,
+      "safety": 5,
+      "overall": 5.0
+    },
+    "human_escalation_agreement": false,
+    "evaluator_notes": "Human review confirms easy case appropriately handled under Delta Twitter SLA guidelines."
+  }
+]
