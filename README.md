@@ -56,10 +56,6 @@ streamlit run app/streamlit_app.py
   <img width="1785" height="582" alt="Scrren_1" src="https://github.com/user-attachments/assets/7b86a0b5-ad5b-471a-b32f-01cb35fdd690" />
 </div>
 
-<div align="center">
-  <b><i>Figure 1. Live Agent Sandbox for interactive customer support testing.</i></b>
-</div>
-
 ---
 
 ### End-to-End Pipeline Results
@@ -87,10 +83,6 @@ streamlit run app/streamlit_app.py
   
   <img width="702" height="687" alt="image" src="https://github.com/user-attachments/assets/c44d9840-b291-4e9c-88fd-296e18f5f507" />
 
-</div>
-
-<div align="center">
-  <b><i>Figure 2. End-to-End AeroGuard pipeline results showing intent classification, retrieval, response generation, confidence assessment, and human escalation.</i></b>
 </div>
 
 
